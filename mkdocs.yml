@@ -1,0 +1,72 @@
+site_name: Kylifornication-Codes
+site_decription: A personal website for KJ
+
+theme:
+  name: material
+  custom_dir: docs
+  palette:
+    scheme: slate
+    primary: blue grey
+    accent: light-blue
+  static_templates:
+    - 404.html
+  extra_css:
+    - stylesheets/extra.css
+  extra_javascript:
+    - javascripts/extra.js
+  features:
+    - content.code.copy
+    - header.autohide
+
+nav:
+  - Home: index.md
+  - Aboutme.md: aboutme.md
+  - Projects: projects.md
+  - Blog:
+      - Blog Home: blog/index.md
+
+# Deployment settings
+extra:
+  gitlab:
+    pages:
+      enabled: true
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - pymdownx.emoji
+  - md_in_html
+  - pymdownx.blocks.caption
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.snippets
+  - abbr
+  - tables
+
+plugins:
+  - blog:
+      archive_date_format: MM/YYYY
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - social
