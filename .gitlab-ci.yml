@@ -1,3 +1,7 @@
+before_script:
+  - mkdir public
+  - echo "Done: Created the public directory to move the site into"
+
 pages:
   stage: deploy
   image: python:latest
