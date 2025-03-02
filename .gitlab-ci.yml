@@ -1,6 +1,9 @@
+variables:
+  GITLAB_API_TOKEN: $GITLAB_TOKEN
+
 before_script:
   - mkdir public
-  - echo "Done: Created the public directory to move the site into"
+  - echo "Done - Created the public directory to move the site into"
 
 pages:
   stage: deploy
