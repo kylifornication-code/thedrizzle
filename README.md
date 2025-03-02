@@ -1,5 +1,3 @@
-[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
-
 # My Personal Website
 
 This project is a personal website built using MkDocs. It includes a homepage, a list of current GitLab projects, and a blog section. The website is designed to showcase my work and share my thoughts through blog posts.
@@ -48,3 +46,5 @@ To deploy to GitLab Pages, ensure you have a `.gitlab-ci.yml` file configured fo
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+
+[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
