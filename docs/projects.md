@@ -1,4 +1,4 @@
-# GitLab Projects
+# GitLab Projects 
 
 <div id="gitlab-projects"></div>
 
