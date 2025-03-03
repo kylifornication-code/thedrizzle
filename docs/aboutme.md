@@ -7,6 +7,7 @@ You'll catch our family on the slopes, doing hikes, and all of the other normal 
 Playing sports year around and into college nutured me into a team player and team leader. If you're around me long enough you'll probably end up running with me, going further than you have before or doing something that pushes you. My background and big competitive nature makes me strive for more in most situations. 
 
 > The late great Bo Schembechler's "The Team" speech still rings in my ears when I think about how some of the best coaches built their teams. 
+
 ><iframe width="560" height="315" src="https://www.youtube.com/embed/UrvwWfIeHu0?si=kGaZ0zM8uPsuEtTD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Behind the Scenes: Work
