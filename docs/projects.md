@@ -3,6 +3,7 @@
 <div id="gitlab-projects"></div>
 
 <script src="js/config.js"></script>
+<script src="../js/config.js"></script>
 
 <script>
 const GITLAB_USERNAME = 'kylifornication';
