@@ -1,4 +1,4 @@
-
+<div><h2>GitLab Projects</h2></div>
 <div id="gitlab-projects"></div>
 
 <script>
@@ -28,6 +28,9 @@ async function fetchGitLabProjects() {
 function createProjectHTML(project) {
     return `
         <div class="project-card">
+            <div class="project-avatar">
+                <img src="${project.avatar_url || 'https://gitlab.com/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png'}" alt="${project.name} avatar">
+            </div>
             <div class="project-details">
             <h2>${project.name}</h2>
             <p>${project.description || 'No description available'}</p>
@@ -78,19 +81,31 @@ const styles = `
     border: 1px solid #e1e4e8;
     border-radius: 6px;
     padding: 16px;
-    margin: 16px 0;
+    margin: 16px;
     background: #fff;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
     align-items: flex-start;
+    gap: 1rem;
+    min-width: 350px;
 }
 
-project-details {
+.project-avatar {
+    display: flex;
+    width: 90px;
+    height: 90px;
     float: left;
+    border-radius: 4px;
+}
+
+.project-details {
+    float: left;
+    width: 70%;
 }
 
 .project-info {
     float: left;
+    width: 10%;
 }
 
 .project-card h2 {
@@ -123,6 +138,7 @@ project-details {
     margin-top: 8px;
     border: 2px solid #74918E;
     color: darkgreen;
+    float: left;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -144,6 +160,5 @@ project-details {
 // Initialize
 document.head.insertAdjacentHTML('beforeend', styles);
 document.addEventListener('DOMContentLoaded', displayProjects);
-
-    
 </script>
+

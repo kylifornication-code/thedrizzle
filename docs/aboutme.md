@@ -1,4 +1,9 @@
-# Behind the Scenes: Life
+## Behind the Scenes: Life
+
+<figure markdown="span">
+![Home](img/spaceneedle.png)
+  <figcaption>Courtesy of Google Whisk AI</figcaption>
+</figure>
 
 My family is a big part of my life. My son's sports and my own athletic events manage to take up most of our schedule. I've been blessed to have an active family and a house full of stuff that we've built ourselves. From the dining room table, to custom library shelves, my wife and I are constantly working on projects and a chance to work with our hands. 
 
@@ -10,7 +15,12 @@ Playing sports year around and into college nutured me into a team player and te
 
 ><iframe width="560" height="315" src="https://www.youtube.com/embed/UrvwWfIeHu0?si=kGaZ0zM8uPsuEtTD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-# Behind the Scenes: Work
+## Behind the Scenes: Work
+
+<figure markdown="span">
+![Work](img/castle.png)
+  <figcaption>Courtesy of Google Whisk AI</figcaption>
+</figure>
 
 In my current role, I help lead the Enterprise Product Security team at Disney. We work with engineering teams across Disney, security testing anything we can get our hands on. 
 
