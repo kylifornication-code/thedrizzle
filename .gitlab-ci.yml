@@ -9,12 +9,12 @@ pages:
   stage: deploy
   image: python:latest
   script:
-    - pip install -r requirements.txt
-    - mkdocs build --site-dir public
     - cp public/js/config.js public/
     - echo "Verifying config file location..."
     - ls -la public/js/config.js
     - ls -la public/config.js
+    - pip install -r requirements.txt
+    - mkdocs build --site-dir public
   artifacts:
     paths:
       - public

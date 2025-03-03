@@ -3,7 +3,7 @@
 
 <div id="gitlab-projects">
 
-<script src="config/config.js"></script>
+<script src="public/config.js"></script>
 <script src="../js/config.js"></script>
 
 <script>
