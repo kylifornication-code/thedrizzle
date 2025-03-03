@@ -9,6 +9,7 @@
 <script>
 console.log('Config script loaded');
 console.log('Token exists:', typeof GITLAB_TOKEN !== 'undefined');
+console.log('Token format:', GITLAB_TOKEN?.length > 0 ? `${GITLAB_TOKEN.slice(0,4)}...` : 'missing');
 
 const GITLAB_USERNAME = 'kylifornication';
 const GITLAB_API_URL = `https://gitlab.com/api/v4/users/${GITLAB_USERNAME}/projects`;
