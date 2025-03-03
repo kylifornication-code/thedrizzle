@@ -2,22 +2,19 @@ variables:
   GITLAB_TOKEN: $GITLAB_TOKEN
 
 before_script:
-    - mkdir config
-    - "echo GITLAB_TOKEN: $GITLAB_TOKEN > config/config.js"
+  - mkdir -p public/js
+  - echo "const GITLAB_TOKEN='${GITLAB_TOKEN}';" > public/js/config.js
 
 pages:
   stage: deploy
   image: python:latest
   script:
-    - echo "Searching for config files..."
-    - find / -name "config.js" 2>/dev/null
-    - echo "Current directory contents:"
-    - ls -R
-    - echo "Config directory contents:"
-    - ls -la config/
     - pip install -r requirements.txt
     - mkdocs build --site-dir public
-    
+    - cp public/js/config.js public/
+    - echo "Verifying config file location..."
+    - ls -la public/js/config.js
+    - ls -la public/config.js
   artifacts:
     paths:
       - public
