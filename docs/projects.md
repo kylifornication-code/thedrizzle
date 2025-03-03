@@ -1,16 +1,13 @@
 # GitLab Projects
 
 
-<div id="gitlab-projects">
-
-
-<script src="/../js/config.js"></script>
+<div id="gitlab-projects"></div>
 
 <script>
 
 const GITLAB_USERNAME = 'kylifornication';
+const GITLAB_TOKEN = 'glpat-Xy7ykAd3H17CXjutajaH';
 const GITLAB_API_URL = `https://gitlab.com/api/v4/users/${GITLAB_USERNAME}/projects`;
-//const GITLAB_TOKEN = 'token'; // This should be set via CI/CD variables, and uncommented out for local dev
 
 async function fetchGitLabProjects() {
     console.log('Fetching projects...');
@@ -152,6 +149,4 @@ document.head.insertAdjacentHTML('beforeend', styles);
 document.addEventListener('DOMContentLoaded', displayProjects);
 
 </script>
-
-</div>
 

@@ -1,11 +1,7 @@
 pages:
-
   stage: deploy
   image: python:latest
   script:
-    - mkdir -p docs/js
-    - echo "const GITLAB_TOKEN='glpat-tGAt53psi2MVom-yMR8u';" > docs/js/config.js
-    - echo "This is a read only token - go crazy hackerman"
     - pip install -r requirements.txt
     - mkdocs build --site-dir public
 
