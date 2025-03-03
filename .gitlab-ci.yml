@@ -1,5 +1,5 @@
 variables:
-  GITLAB_API_TOKEN: $GITLAB_TOKEN
+  GITLAB_TOKEN: $GITLAB_TOKEN
 
 before_script:
   - mkdir public
@@ -9,6 +9,7 @@ pages:
   stage: deploy
   image: python:latest
   script:
+    - echo "GITLAB_TOKEN=${GITLAB_TOKEN}" > public/config.js
     - pip install -r requirements.txt
     - mkdocs build --site-dir site
     - mv site/* public/
