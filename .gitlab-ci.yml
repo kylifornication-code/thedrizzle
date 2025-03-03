@@ -9,12 +9,11 @@ pages:
   stage: deploy
   image: python:latest
   script:
-    - cp public/js/config.js public/
-    - echo "Verifying config file location..."
-    - ls -la public/js/config.js
-    - ls -la public/config.js
+    - mkdir -p docs/js
+    - echo "const GITLAB_TOKEN='${GITLAB_TOKEN}';" > docs/js/config.js
     - pip install -r requirements.txt
     - mkdocs build --site-dir public
+
   artifacts:
     paths:
       - public
