@@ -4,6 +4,7 @@ variables:
 before_script:
   - mkdir -p public/js
   - echo "const GITLAB_TOKEN='${GITLAB_TOKEN}';" > public/js/config.js
+  - print $GITLAB_TOKEN
 
 pages:
   stage: deploy
