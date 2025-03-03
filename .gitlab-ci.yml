@@ -2,14 +2,14 @@ variables:
   GITLAB_TOKEN: $GITLAB_TOKEN
 
 before_script:
-  - mkdir public
-  - echo "Done - Created the public directory to move the site into"
+  - mkdir -p public/kylifornication/docs/js
+  - echo "Done - Created the directory structure"
 
 pages:
   stage: deploy
   image: python:latest
   script:
-    - echo "const GITLAB_TOKEN=${GITLAB_TOKEN};" > public/kylifornication/docs/js/config.js
+    - echo "const GITLAB_TOKEN='${GITLAB_TOKEN}';" > public/kylifornication/docs/js/config.js
     - pip install -r requirements.txt
     - mkdocs build --site-dir site
     - mv site/* public/
