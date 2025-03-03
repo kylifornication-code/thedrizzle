@@ -1,8 +1,9 @@
 # GitLab Projects
 
-<div id="gitlab-projects"></div>
 
-<script src="js/config.js"></script>
+<div id="gitlab-projects">
+
+<script src="config/config.js"></script>
 <script src="../js/config.js"></script>
 
 <script>
@@ -150,3 +151,6 @@ document.head.insertAdjacentHTML('beforeend', styles);
 document.addEventListener('DOMContentLoaded', displayProjects);
 
 </script>
+
+</div>
+
