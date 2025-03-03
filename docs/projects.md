@@ -4,7 +4,7 @@
 <div id="gitlab-projects">
 
 <script src="js/config.js"></script>
-<script src="../js/config.js"></script>
+<!-- <script src="../js/config.js"></script> -->
 
 <script>
 console.log('Config script loaded');
