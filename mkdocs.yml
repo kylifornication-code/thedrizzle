@@ -13,7 +13,7 @@ theme:
   extra_css:
     - stylesheets/extra.css
   extra_javascript:
-    - javascripts/config.js
+    - javascripts/glprojects.js
   features:
     - content.code.copy
     - header.autohide
