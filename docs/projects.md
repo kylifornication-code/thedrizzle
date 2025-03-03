@@ -7,6 +7,9 @@
 <script src="../js/config.js"></script>
 
 <script>
+console.log('Config script loaded');
+console.log('Token exists:', typeof GITLAB_TOKEN !== 'undefined');
+
 const GITLAB_USERNAME = 'kylifornication';
 const GITLAB_API_URL = `https://gitlab.com/api/v4/users/${GITLAB_USERNAME}/projects`;
 //const GITLAB_TOKEN = 'token'; // This should be set via CI/CD variables, and uncommented out for local dev

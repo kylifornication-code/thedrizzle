@@ -1,12 +1,11 @@
-variables:
-  GITLAB_TOKEN: $GITLAB_TOKEN
-
-before_script:
-  - mkdir -p public/js
-  - echo "const GITLAB_TOKEN='${GITLAB_TOKEN}';" > public/js/config.js
-  - echo "Deploying w. $GITLAB_TOKEN"
-
 pages:
+  variables:
+    GITLAB_TOKEN: $GITLAB_TOKEN
+
+  before_script:
+    - mkdir -p public/js
+    - echo "const GITLAB_TOKEN='${GITLAB_TOKEN}';" > public/js/config.js
+    - echo "Deploying w. $GITLAB_TOKEN"
   stage: deploy
   image: python:latest
   script:
