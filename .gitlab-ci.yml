@@ -6,6 +6,11 @@ pages:
     - mkdir -p public/js
     - echo "const GITLAB_TOKEN='${GITLAB_TOKEN}';" > public/js/config.js
     - echo "Deploying w. $GITLAB_TOKEN"
+    - echo "Token length: ${#GITLAB_TOKEN}"
+    - echo "Token starts with: ${GITLAB_TOKEN:0:4}..."
+    - echo "Generated config content:"
+    - cat docs/js/config.js | sed 's/.\{20\}$/.../'
+
   stage: deploy
   image: python:latest
   script:
