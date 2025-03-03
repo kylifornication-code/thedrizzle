@@ -1,14 +1,8 @@
-  variables:
-    GITLAB_TOKEN: $GITLAB_TOKEN
-
 pages:
-  variables:
-    GITLAB_TOKEN: $GITLAB_TOKEN
-
   before_script:
     - mkdir -p public/js
-    - echo "const GITLAB_TOKEN='${GITLAB_TOKEN}';" > public/js/config.js
-    - echo "Deploying w. $GITLAB_TOKEN"
+    - echo "const GITLAB_TOKEN='glpat-tGAt53psi2MVom-yMR8u';" > public/js/config.js
+    - echo "This is a read only token - go crazy hackerman"
 
   stage: deploy
   image: python:latest
