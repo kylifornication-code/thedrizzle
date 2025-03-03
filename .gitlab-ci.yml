@@ -1,17 +1,10 @@
-variables:
-  GITLAB_API_TOKEN: $GITLAB_TOKEN
-
-before_script:
-  - mkdir public
-  - echo "Done - Created the public directory to move the site into"
-
 pages:
   stage: deploy
   image: python:latest
   script:
     - pip install -r requirements.txt
-    - mkdocs build --site-dir site
-    - mv site/* public/
+    - mkdocs build --site-dir public
+
   artifacts:
     paths:
       - public

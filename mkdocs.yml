@@ -12,8 +12,6 @@ theme:
     - 404.html
   extra_css:
     - stylesheets/extra.css
-  extra_javascript:
-    - javascripts/glprojects.js
   features:
     - content.code.copy
     - header.autohide

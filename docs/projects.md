@@ -1,28 +1,26 @@
-# Current GitLab Projects
 
 <div id="gitlab-projects"></div>
 
 <script>
-console.log('Script loaded');
-
 const GITLAB_USERNAME = 'kylifornication';
+const GITLAB_TOKEN = 'glpat-Xy7ykAd3H17CXjutajaH';
 const GITLAB_API_URL = `https://gitlab.com/api/v4/users/${GITLAB_USERNAME}/projects`;
 
 async function fetchGitLabProjects() {
-    const headers = {
-        // Comment the line below to make this work on local
-        'Authorization': `Bearer ${process.env.GITLAB_TOKEN}`,
-        // Un/comment the line below and replace `token` with your GitLab token for local testing
-        //'Authorization': `Bearer token`,
-        'Content-Type': 'application/json'
-    };
-
+    console.log('Fetching projects...');
     try {
-        const response = await fetch(GITLAB_API_URL, { headers });
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        return await response.json();
+        const response = await fetch(GITLAB_API_URL, {
+            headers: {
+                'PRIVATE-TOKEN': GITLAB_TOKEN,
+                'Content-Type': 'application/json'
+            }
+        });
+        console.log('Response status:', response.status);
+        const data = await response.json();
+        console.log('Projects found:', data.length);
+        return data;
     } catch (error) {
-        console.error('Error fetching GitLab projects:', error);
+        console.error('Fetch error:', error);
         return [];
     }
 }
@@ -147,4 +145,5 @@ project-details {
 document.head.insertAdjacentHTML('beforeend', styles);
 document.addEventListener('DOMContentLoaded', displayProjects);
 
+    
 </script>
