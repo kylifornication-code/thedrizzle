@@ -5,11 +5,11 @@
   <figcaption>Courtesy of Google Whisk AI</figcaption>
 </figure>
 
-My family is a big part of my life. My son's sports and my own athletic events manage to take up most of our schedule. I've been blessed to have an active family and a house full of stuff that we've built ourselves. From the dining room table, to custom library shelves, my wife and I are constantly working on projects and a chance to work with our hands. 
+My family is a huge part of my life. Between my son's sports and my own athletic events, our schedule stays packed. I’m grateful to have an active family and a home filled with things we’ve built ourselves. From the dining room table to custom library shelves, my wife and I are always working on new projects and taking every opportunity to create with our hands.
 
-You'll catch our family on the slopes, doing hikes, and all of the other normal PNW things. I grew up in a small town called, Hoquiam, (meaning "Hungry for Wood"), with parents that worked on houses, cars, and anything my dad could think of flipping. My parents hustled a lot and it helped me understand the value of hardwork. 
+You'll often find us on the slopes, hiking trails, or doing all the typical PNW activities. I grew up in a small town called Hoquiam—meaning "Hungry for Wood"—with parents who were always working on houses, cars, or whatever project my dad could find to flip. Their hustle taught me the value of hard work.
 
-Playing sports year around and into college nutured me into a team player and team leader. If you're around me long enough you'll probably end up running with me, going further than you have before or doing something that pushes you. My background and big competitive nature makes me strive for more in most situations. 
+Playing sports year-round and into college shaped me into both a team player and a leader. If you're around me long enough, you'll probably end up running with me, pushing past your limits, or trying something that challenges you. My competitive nature and background drive me to constantly strive for more in everything I do.
 
 > The late great Bo Schembechler's "The Team" speech still rings in my ears when I think about how some of the best coaches built their teams. 
 
@@ -22,9 +22,9 @@ Playing sports year around and into college nutured me into a team player and te
   <figcaption>Courtesy of Google Whisk AI</figcaption>
 </figure>
 
-In my current role, I help lead the Enterprise Product Security team at Disney. We work with engineering teams across Disney, security testing anything we can get our hands on. 
+In my current role, I help lead the Enterprise Product Security team at Disney, working with engineering teams across the company to security test anything we can get our hands on.
 
-I started out doing customer service jobs and working in restaurants. If you ever eat with my wife and I, you'll hear us over analyzing the flow, experience, and how the staff turn tables. 
+I started my career in customer service and restaurants, which gave me an eye for operations. If you ever dine with my wife and me, you’ll probably hear us analyzing the flow, experience, and how the staff turn tables.
 
-Professionally, I specialize in leading and consulting engineering teams on DevSecOps and building products for engineers. While I started my career coding and working as a developer, I found my passion for being a team leader working between working hands on with engineers and building business cases and roadmaps. If you ask anyone I work with, they'll tell you that I'm extremely hard working, bring a lot of energy to work everyday, and thrive when I'm leading meetings. 
+Professionally, I specialize in leading and consulting engineering teams on DevSecOps and building products for engineers. While I started out coding and working as a developer, I discovered my passion for leadership—bridging the gap between hands-on engineering work and high-level business strategy. I thrive in environments where I can build business cases, develop roadmaps, and lead teams to success. If you ask anyone I work with, they’ll tell you I’m extremely hard-working, bring energy to every day, and excel at leading projects. 
 
