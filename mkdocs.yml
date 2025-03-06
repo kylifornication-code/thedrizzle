@@ -16,12 +16,14 @@ theme:
   features:
     - content.code.copy
     - header.autohide
+    - navigation.footer
+    - navigation.tabs
   favicon: img/favicon.ico
   logo: img/logo.png
 
 nav:
   - Home: index.md
-  - Aboutme.md: aboutme.md
+  - About Me: aboutme.md
   - Projects: projects.md
   - Blog:
       - Blog Home: blog/index.md
@@ -47,6 +49,7 @@ extra:
   - icon: fontawesome/brands/instagram
     name: kylifornication on Instagram
     link: https://www.instagram.com/kylifornication/
+  generator: false
 
 hooks:
   - hooks/socialmedia.py
@@ -95,3 +98,5 @@ plugins:
   - social:
       cards_layout_options:
         logo: docs/img/logo.png
+
+copyright: Copyright &copy; 2025 - Kyle James
