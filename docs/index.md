@@ -1,6 +1,7 @@
 ---
 hide:
   - toc
+  - navigation
 ---
 
 # Welcome to my site!
@@ -21,3 +22,4 @@ Feel free to explore my [GitLab projects](projects.md) and check out my blog for
 ## Reach out to Me
 
 <div class=form style="float:left;"><span style = "min-width: 200px; width: 800px; max-width: 1000px;"><script src="https://www.cognitoforms.com/f/seamless.js" data-key="JyxLnYwMIUSwUYewiHQ4jQ" data-form="1"></script></span></div>
+

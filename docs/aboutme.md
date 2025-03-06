@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 ## Behind the Scenes: Life
 
 <figure markdown="span">

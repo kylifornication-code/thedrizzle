@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 <div><h2>GitLab Projects</h2></div>
 <div id="gitlab-projects"></div>
 
