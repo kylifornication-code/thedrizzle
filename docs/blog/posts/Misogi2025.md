@@ -1,8 +1,8 @@
 ---
 title: My Misogi 2025
 date:
-    created: 2024-01-31
-    updated: 2024-02-27
+    created: 2025-01-31
+    updated: 2025-02-27
 readtime: 5
 categories: 
     - Life/Mission
