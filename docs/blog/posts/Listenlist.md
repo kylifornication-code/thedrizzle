@@ -5,7 +5,7 @@ date:
     updated: 2025-03-05
 readtime: 5
 categories: 
-    - Listening
+    - Learning
 slug: listen-list-2025
 authors:
     - kylifornication
