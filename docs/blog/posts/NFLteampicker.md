@@ -21,7 +21,7 @@ authors:
 
 I’ve always been fascinated by the intersection of data, decision-making, and technology. Recently, two podcast episodes sparked an idea that I couldn’t shake — one that combines my passion for fantasy football, my love for tech, and my curiosity about how NFL players make decisions about their careers.
 
-> To access the NFL Team Picker app, go [here](v0-nfl-team-selector-kylifornications-projects.vercel.app). 
+> To access the NFL Team Picker app, go [here](https://v0-nfl-team-selector-kylifornications-projects.vercel.app). 
 
 <!-- more -->
 
@@ -53,7 +53,7 @@ For NFL hopefuls, career decisions go far beyond performance on the field. A pla
 
 ### What's Next?
 
-With the NFL Draft approaching and dynasty fantasy football leagues heating up, I'm excited to launch this project [here](v0-nfl-team-selector-kylifornications-projects.vercel.app). While it started as a curiosity-driven idea, I see real potential in how data and AI-driven insights can empower players and fans alike.
+With the NFL Draft approaching and dynasty fantasy football leagues heating up, I'm excited to launch this project [here](https://v0-nfl-team-selector-kylifornications-projects.vercel.app). While it started as a curiosity-driven idea, I see real potential in how data and AI-driven insights can empower players and fans alike.
 
 I’ll be sharing my development journey — from learning Next.js to experimenting with Vercel’s AI-powered tools — and diving deeper into the data that makes this project tick. Stay tuned as I build NFL Player Picks and explore how tech can help players find their perfect team and city fit.
 
