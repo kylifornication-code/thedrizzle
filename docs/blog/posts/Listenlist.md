@@ -19,11 +19,9 @@ authors:
 
 ## Don't you mean reading list?
 
-I stopped reading books a long time ago. For as long as I can remember, I’ve never enjoyed reading and always struggled to visualize what others would call a _great read_. Instead, I consume all my "reading" content by listening. I've used screen readers, podcasts, and even AI (you should try NotebookLM or ChatGPT's transcriber) to help me get content into medium that work well for me. 
+I stopped reading books a long time ago because it just never clicked for me. I’ve always struggled to visualize what others call a “great read,” so instead, I consume my “reading” by listening—whether that’s through screen readers, podcasts, or even AI tools like NotebookLM or ChatGPT’s transcriber. These options give me the freedom to absorb information in a medium that truly works for me.
 
-My trick? I always have a book or podcast playing while I'm on the road or basically any chance I'm alone. I find the best time to listen to books and podcasts during my long runs. HOver the years, I’ve turned to Audible and various podcasts to get my fix — that’s what I’ll be sharing in this post.
-
-**Spoiler**: There won’t be any fiction. I’m all about business and books rooted in real life stories.
+My strategy? I almost always have a book or podcast playing whenever I’m driving or any time I’m on my own. It’s especially effective during long runs—there’s nothing like lacing up for a run and immersing myself in a captivating story or fascinating conversation. Over the years, Audible and an ever-growing list of podcasts have become my go-to sources for continuous learning and entertainment. In this post, I’ll share the shows and audiobooks that have kept me hooked.
 
 <!-- more -->
 
