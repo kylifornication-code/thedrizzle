@@ -44,7 +44,7 @@ While it's early in development ([download it here from GitHub](https://github.c
 
 ## Who Should Try It & Real‑World Use‑Cases  
 
-My use case: I wanted something small that I could carry with me on the go, so I could monitor the device I'm using. I often travel with my laptops and phone and findings myself using coffee shop or airport wifi. If the wifi I'm evaluating doesn't have some sort of secure authorization, I don't use it, and even when there is a login I make sure to make sure to get the info from a company agent so I'm not being spoofed at some level. Call me paranoid, but privacy is a big deal for me. I'm looking forward to Rayhunter being part of my travel equipment so I can test and verify while I'm on the go.  
+My use case: I wanted something small that I could carry with me on the go, so I could monitor the device I'm using. I often travel with my laptops and phone and findings myself wanting to use coffee shop or airport wifi. If the wifi I'm evaluating doesn't have some sort of secure authorization, I don't use it, and even when there is a login I make sure to make sure to get the info from a company agent so I'm not being spoofed at some level. Call me paranoid, but privacy is a big deal for me. I'm looking forward to Rayhunter being part of my travel equipment so I can test and verify while I'm on the go.  
 
 #### Other Use Cases Include:
 | Audience               | Scenario                | Payoff                                                                                                   |
@@ -70,14 +70,9 @@ My use case: I wanted something small that I could carry with me on the go, so I
 
 I'll drop some links below! These are the resources I used to read up on it after I saw it on LinkedIn. It's a great mini=project and I'll definitely be travelling with it from now on! 
 
-* GitHub – Rayhunter
-https://github.com/EFForg/rayhunter
-* EFF Launch Blog Post – “Meet Rayhunter: A New Open Source Tool to Detect Cellular Spying”
-https://www.eff.org/deeplinks/2025/03/meet-rayhunter-new-open-source-tool-eff-detect-cellular-spying
-* BleepingComputer Explainer – “Open‑source tool ‘Rayhunter’ helps users detect Stingray attacks”
-https://www.bleepingcomputer.com/news/security/open-source-tool-rayhunter-helps-users-detect-stingray-attacks/
-* Step‑by‑Step Setup Walk‑Through (Funnymonkey)
-https://www.funnymonkey.com/2025/03/setting-up-rayhunter-from-eff-and-using-rayhunter-in-the-world/
-* It’s FOSS News – “EFF’s Rayhunter Is Here To Catch Eavesdroppers”
-https://news.itsfoss.com/eff-rayhunter/
+* [GitHub – Rayhunter](https://github.com/EFForg/rayhunter)
+* [EFF Launch Blog Post – “Meet Rayhunter: A New Open Source Tool to Detect Cellular Spying”](https://www.eff.org/deeplinks/2025/03/meet-rayhunter-new-open-source-tool-eff-detect-cellular-spying)
+* [BleepingComputer Explainer – “Open‑source tool ‘Rayhunter’ helps users detect Stingray attacks”](https://www.bleepingcomputer.com/news/security/open-source-tool-rayhunter-helps-users-detect-stingray-attacks/)
+* [Step‑by‑Step Setup Walk‑Through (Funnymonkey)](https://www.funnymonkey.com/2025/03/setting-up-rayhunter-from-eff-and-using-rayhunter-in-the-world/)
+* [It’s FOSS News – “EFF’s Rayhunter Is Here To Catch Eavesdroppers”](https://news.itsfoss.com/eff-rayhunter/)
 
