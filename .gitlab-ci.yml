@@ -4,6 +4,8 @@ pages:
   script:
     - pip install -r requirements.txt
     - mkdocs build --site-dir public
+  only:
+    - main
 
   artifacts:
     paths:
