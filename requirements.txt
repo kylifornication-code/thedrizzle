@@ -1,4 +1,5 @@
 mkdocs
 mkdocs-material
 mkdocs-glightbox
-mkdocs-material[imaging]
+# Commented out mkdocs-material[imaging] because of this stupid cairo build dep error, only commented out on QA
+# mkdocs-material[imaging]
