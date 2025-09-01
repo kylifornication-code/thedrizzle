@@ -6,6 +6,7 @@ date:
 readtime: 5
 categories: 
     - Learning
+    - MyLife.sh
 slug: listen-list-2025
 authors:
     - kylifornication
