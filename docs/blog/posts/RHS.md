@@ -94,6 +94,6 @@ Let's start with a timeline of key events; this will start off mostly day by day
 - [RSH Type 2 Overview](https://eyewiki.aao.org/Ramsay_Hunt_Syndrome_Type_2)
 - [Time lapse over someone’s recovery over 16 weeks](https://crystal-touch.nl/step-by-step-recovery-explanation-bells-palsy/)
 
-### Ask for help
+## Ask for help
 
 If you're reading this and have RHS and think I could possibly help you, reach out! I'll happily give you advice, listen, and try to help any way I can. 
