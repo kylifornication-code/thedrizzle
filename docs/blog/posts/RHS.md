@@ -13,7 +13,6 @@ authors:
 
 ---
 
-[//]: <> (TODO: Update preface to work)
 !!! Preface
     
     When I woke up Dec 12th, I knew something was off but I didn't realize what and how serious it was. I didn't realize the next ~1.5 years to now (Sept 2025) would be full of lessons -  now gratitude - but naturally life is going to life. 
