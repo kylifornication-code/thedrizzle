@@ -5,7 +5,7 @@ date:
     updated: 2025-02-27
 readtime: 5
 categories: 
-    - Life/Mission
+    - MyLife.sh
 slug: misogi-2025
 authors:
     - kylifornication
