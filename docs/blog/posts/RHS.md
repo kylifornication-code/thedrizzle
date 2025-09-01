@@ -16,7 +16,7 @@ authors:
 [//]: <> (TODO: Update preface to work)
 !!! Preface
     
-    When I woke up Dec 12th, I knew something was off but I didn't realize what and how serious it was. I didn't realize the next 1.5 years to now (June 2025) would be full of lessons -  now gratitude - but naturally life is going to life. 
+    When I woke up Dec 12th, I knew something was off but I didn't realize what and how serious it was. I didn't realize the next ~1.5 years to now (Sept 2025) would be full of lessons -  now gratitude - but naturally life is going to life. 
 
     I told myself I'd write about my journey with Ramsay Hunt Syndrome eventually though. Not so much to reflect, but to share my timeline objectively and hopefully it could help someone else. 
 
@@ -27,7 +27,7 @@ authors:
 
 <!-- more -->
 
-## Timeline
+## Timeline - From then to now
 
 Let's start with a timeline of key events; this will start off mostly day by day and will skip to weeks and months to now. 
 
@@ -74,6 +74,7 @@ Let's start with a timeline of key events; this will start off mostly day by day
 
 ## Key learnings during recovery
 
+* Advocate for yourself and research! If I wouldn't have brought up my ear swelling and continued pain and issues then I probably would've been told it's Bell's Palsy and not given the right medication. (Btw, I don't blame the physicians, since Ramsay Hunt Syndrome is much less likely than Bell's Palsy)
 * Be patient - this is the hardest part because regaining strength and movement can takes days if not weeks. 
 * Don't strain to regain movement. E.g. I tried for awhile to forceably close my eye and it caused adverse effects like twitching in other parts of my face.
 * If you can't close your eye all of the way, stay away from looking at screens long because you won't blink often, stay away from fans because they can dry out your eye. 
@@ -92,3 +93,7 @@ Let's start with a timeline of key events; this will start off mostly day by day
 - [What else could happen based on the RHS?](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4904572/)
 - [RSH Type 2 Overview](https://eyewiki.aao.org/Ramsay_Hunt_Syndrome_Type_2)
 - [Time lapse over someone’s recovery over 16 weeks](https://crystal-touch.nl/step-by-step-recovery-explanation-bells-palsy/)
+
+### Ask for help
+
+If you're reading this and have RHS and think I could possibly help you, reach out! I'll happily give you advice, listen, and try to help any way I can. 
