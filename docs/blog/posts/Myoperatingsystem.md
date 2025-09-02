@@ -13,8 +13,8 @@ authors:
 ---
 
 <figure markdown="span">
-![Misogi](../../img/misogi.png)
-  <figcaption>Courtesy of Google Whisk AI</figcaption>
+![Misogi](../../img/MeOS.png)
+  <figcaption>Courtesy of my mad Canva skills</figcaption>
 </figure>
 
 ## My Leadership Operating System
