@@ -11,7 +11,7 @@ hide:
       <div class="hero-text">
         <h1 class="hero-title">Welcome to The Drizzle</h1>
         <p class="hero-subtitle">Personal Stories from the PNW</p>
-        <p class="hero-description">I'm KJ, a passionate technologist that loves building stuff. This is my digital space where I share my operating system — how I think and work.</p>
+        <p class="hero-description">I'm KJ, a passionate technologist and maker. Every so often I'll give you a drizzle of content from the place where it's always raining. This is my digital space where I share my operating system — how I think and work.</p>
         <div class="hero-buttons">
           <a href="aboutme" class="btn btn-primary">About Me</a>
           <a href="projects" class="btn btn-secondary">My Projects</a>
@@ -157,6 +157,7 @@ hide:
 
 .btn-primary:hover {
   transform: translateY(-2px);
+  color: white;
   box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
 }
 
@@ -168,7 +169,7 @@ hide:
 
 .btn-secondary:hover {
   background: #60a5fa;
-  color: #0f172a;
+  color:rgb(255, 255, 255);
   transform: translateY(-2px);
 }
 
