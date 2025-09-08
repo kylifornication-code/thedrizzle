@@ -1,24 +1,154 @@
+/* Global Styles */
 body {
-    background-color: black;
-    color: #727D73;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
 }
 
-a {
-    color: #AAB99A;
+/* Override Material theme colors for better integration */
+.md-content {
+    background-color: transparent;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #727D73;
+.md-main__inner {
+    margin-top: 0;
 }
 
+.md-header {
+    background-color: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #334155;
+}
+
+.md-header__title {
+    color: #f1f5f9;
+}
+
+/* Navigation */
 .navbar {
-    background-color: #D0DDD0;
+    background-color: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
 }
 
 .navbar-brand {
-    color: #727D73;
+    color: #f1f5f9;
+    font-weight: 600;
 }
 
 .navbar-nav .nav-link {
-    color: #727D73;
+    color: #94a3b8;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #60a5fa;
+}
+
+/* Links */
+a {
+    color: #60a5fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #93c5fd;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #f1f5f9;
+    font-weight: 600;
+}
+
+/* Code blocks */
+.md-typeset pre {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+}
+
+.md-typeset code {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #334155;
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+    border: 1px solid #334155;
+}
+
+.md-typeset table:not([class]) th {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border-bottom: 1px solid #334155;
+}
+
+.md-typeset table:not([class]) td {
+    border-bottom: 1px solid #334155;
+}
+
+/* Footer */
+.md-footer {
+    background-color: #0f172a;
+    border-top: 1px solid #334155;
+}
+
+.md-footer-meta {
+    background-color: #0f172a;
+}
+
+/* Sidebar */
+.md-sidebar {
+    background-color: #0f172a;
+}
+
+.md-nav__title {
+    color: #f1f5f9;
+}
+
+.md-nav__link {
+    color: #94a3b8;
+}
+
+.md-nav__link:hover {
+    color: #60a5fa;
+}
+
+/* Search */
+.md-search__form {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+}
+
+.md-search__input {
+    color: #e2e8f0;
+}
+
+.md-search__input::placeholder {
+    color: #64748b;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* Smooth transitions */
+* {
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
