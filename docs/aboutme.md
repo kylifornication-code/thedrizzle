@@ -9,8 +9,8 @@ hide:
   <section class="about-hero-section">
     <div class="about-hero-content">
       <div class="about-hero-text">
-        <h1 class="about-hero-title">About The Drizzle</h1>
-        <p class="about-hero-subtitle">The Story Behind the Digital Storm</p>
+        <h1 class="about-hero-title">About Me</h1>
+        <p class="about-hero-subtitle">My Story and Why I Built The Drizzle</p>
         <p class="about-hero-description">From PNW roots to tech leadership, here's the journey that shaped my approach to building, leading, and creating in the digital world.</p>
       </div>
       <div class="about-hero-image">
@@ -222,38 +222,38 @@ hide:
     <div class="values-grid">
       <div class="value-card">
         <div class="value-icon">🤝</div>
-        <h3>Team Leadership</h3>
-        <p>I thrive in environments where I can build business cases, develop roadmaps, and lead teams to success. If you ask anyone I work with, they'll tell you I'm extremely hard-working, bring energy to every day, and excel at leading projects.</p>
+        <h3>Leadership+Teamwork</h3>
+        <p>I'm a big believer that leaders lead - no matter what. I started playing team sports when I was 4yr old and I can't remember a time I wasn't on a team. Teamwork is the entry fee for being a leader and I believe I was built to lead. It's something I gravitate towards and flex leading from the back and allowing others to lead the way and from the front where I break ground and show what can be done.</p>
       </div>
       
+      <div class="value-card">
+        <div class="value-icon">💎</div>
+        <h3>Integrity</h3>
+        <p>Integrity is table stakes in life. As my career has progressed and life has become heavier with responsibility, I've found being and showing high integrity keeps me grounded. Some know it as karma, but I believe what you put out into the world is what you get back.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">⚙️</div>
+        <h3>Curiosity+Humility</h3>
+        <p>I think of curiosity and humility as the same coin with different sides. They're part of my core values because curiosity is a core fundamental of learning and humility is a fundamental of openness. I'm innately curious and I've developed the emotional intelligence to have humility to new experiences, learnings, and what life throws at me.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon">🏔️</div>
+        <h3>Continuous Growth</h3>
+        <p>Continuous learning is something that drives a lot of my purpose. It's enabled me to excel in tech and in school. Along with family, learning new things is what I believe what makes my life so rich. I have lofty goals of becoming a professor and learning all I can in this lifetime.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon">🏋️‍♀️</div>
+        <h3>Hard Work</h3>
+        <p>I'm highly competitive. I played team and individual sports my entire life, coached high school wrestling for years, and my family has a large collection of boardgames we compete with eachother in. I love logic games, chess, and games that have social elements of negotiation. I'm always pushing myself and those around me to set big goals.</p>
+      </div>
+
       <div class="value-card">
         <div class="value-icon">🔧</div>
-        <h3>Hands-On Building</h3>
-        <p>Professionally, I specialize in leading and consulting engineering teams on DevSecOps and building products for engineers. I believe in staying close to the work while thinking strategically.</p>
-      </div>
-      
-      <div class="value-card">
-        <div class="value-icon">⚡</div>
-        <h3>Continuous Growth</h3>
-        <p>My competitive nature and background drive me to constantly strive for more in everything I do. I'm always pushing myself and my teams to reach new heights.</p>
-      </div>
-
-      <div class="value-card">
-        <div class="value-icon">⚡</div>
-        <h3>Continuous Growth</h3>
-        <p>My competitive nature and background drive me to constantly strive for more in everything I do. I'm always pushing myself and my teams to reach new heights.</p>
-      </div>
-
-      <div class="value-card">
-        <div class="value-icon">⚡</div>
-        <h3>Continuous Growth</h3>
-        <p>My competitive nature and background drive me to constantly strive for more in everything I do. I'm always pushing myself and my teams to reach new heights.</p>
-      </div>
-
-      <div class="value-card">
-        <div class="value-icon">⚡</div>
-        <h3>Continuous Growth</h3>
-        <p>My competitive nature and background drive me to constantly strive for more in everything I do. I'm always pushing myself and my teams to reach new heights.</p>
+        <h3>Maker</h3>
+        <p>If you're not making you're consuming. This value is something my family shares. I grew up in a family of DIYers and with the introduction of AI it's now easier than ever to create. I love to 3d print, write, and work on my house as well as in the digit world.</p>
       </div>
 
     </div>
