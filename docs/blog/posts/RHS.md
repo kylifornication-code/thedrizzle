@@ -81,7 +81,7 @@ Let's start with a timeline of key events; this will start off mostly day by day
 
 ## Key people that helped me recover
 
-* My wife for keeping me motivated and patient and helping me get to 
+* My wife for keeping me motivated and patient and helping me get to all of my appointments and keeping me positive. 
 * Dr. Pierra Butheau - Physiotherapist, [Instagram](https://www.instagram.com/pierreyvesbutheaufacialphysio/?hl=en), [Website](https://www.butheauphysio.com/treatment/facial-paralysis/)
 * Dr. Prabhat K. Bhama - MD, [Website](https://www.providence.org/doctors/facial-plastic-surgery/wa/everett/prabhat-bhama-1962415430)
 
