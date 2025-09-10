@@ -198,7 +198,7 @@ hide:
 
   <!-- Values Section -->
   <section class="about-section">
-    <h2 class="section-title">Behind the Scenes: Values</h2>
+    <h2 class="section-title">Behind the Scenes: Core Values</h2>
     <div class="values-grid">
       <div class="value-card">
         <div class="value-icon">🤝</div>
@@ -217,6 +217,25 @@ hide:
         <h3>Continuous Growth</h3>
         <p>My competitive nature and background drive me to constantly strive for more in everything I do. I'm always pushing myself and my teams to reach new heights.</p>
       </div>
+
+      <div class="value-card">
+        <div class="value-icon">⚡</div>
+        <h3>Continuous Growth</h3>
+        <p>My competitive nature and background drive me to constantly strive for more in everything I do. I'm always pushing myself and my teams to reach new heights.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon">⚡</div>
+        <h3>Continuous Growth</h3>
+        <p>My competitive nature and background drive me to constantly strive for more in everything I do. I'm always pushing myself and my teams to reach new heights.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon">⚡</div>
+        <h3>Continuous Growth</h3>
+        <p>My competitive nature and background drive me to constantly strive for more in everything I do. I'm always pushing myself and my teams to reach new heights.</p>
+      </div>
+
     </div>
   </section>
 
