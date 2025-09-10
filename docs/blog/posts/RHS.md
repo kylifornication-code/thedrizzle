@@ -79,7 +79,7 @@ Let's start with a timeline of key events; this will start off mostly day by day
 * If you can't close your eye all of the way, stay away from looking at screens long because you won't blink often, stay away from fans because they can dry out your eye. 
 * Manage your stress to manage your nervous system. Your nerves are growing back and they control you muscles; retrain them with care and patience. When I went back to work in March '24, I had a lot of stress and it caused me to have flare ups of twitching that I couldn't control unless I stepped away and could calm myself. 
 
-## Key people that helped me recover
+## Key people that helped my recovery
 
 * My wife for keeping me motivated and patient and helping me get to all of my appointments and keeping me positive. 
 * Dr. Pierra Butheau - Physiotherapist, [Instagram](https://www.instagram.com/pierreyvesbutheaufacialphysio/?hl=en), [Website](https://www.butheauphysio.com/treatment/facial-paralysis/)
