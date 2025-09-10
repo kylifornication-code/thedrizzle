@@ -70,6 +70,7 @@ hide:
           <h3>Sr Manager, Security Engineering Partnerships</h3>
           <p class="timeline-period">Mar 2025 - Present</p>
           <p>Leading security engineering partnerships and driving strategic initiatives across Disney's security landscape. Building bridges between security teams and engineering organizations to create more secure products and experiences.</p>
+          <button class="read-more-btn" data-template="tmpl-sr-manager">Read more</button>
         </div>
       </div>
       
@@ -81,6 +82,7 @@ hide:
           <h3>Sr Staff Security Engineer | Manager</h3>
           <p class="timeline-period">Aug 2022 - Mar 2025</p>
           <p>Secured the magic by making security a resume-worthy accolade for developers. Managed enterprise-wide secure development services and programs focused on developer enablement, overseeing tools like Snyk, Whitehat, Checkmarx, and Tenable.</p>
+          <button class="read-more-btn" data-template="tmpl-sr-staff-secmgr">Read more</button>
         </div>
       </div>
       
@@ -92,6 +94,7 @@ hide:
           <h3>Sr Software Product Engineer, DevOps Platforms</h3>
           <p class="timeline-period">Sep 2021 - Dec 2022</p>
           <p>Led 4 functional engineering teams across entitlements, billing automation, and engineering tools. Focused on ecosystem strategy, reducing enterprise licensing spend, and representing Disney at external events like DevOps Days and AWS RE:Invent.</p>
+          <button class="read-more-btn" data-template="tmpl-sr-software-prod-eng">Read more</button>
         </div>
       </div>
       
@@ -103,6 +106,7 @@ hide:
           <h3>Senior Product Manager, Developer Enablement</h3>
           <p class="timeline-period">Aug 2020 - Sep 2021</p>
           <p>Navigated the 21st Century Fox acquisition, rationalizing $2.5M in duplicate service contracts. Led GitHub.com approval across the company and consolidated multiple contracts, saving $1.2M in licensing costs.</p>
+          <button class="read-more-btn" data-template="tmpl-senior-pm-dev-enablement">Read more</button>
         </div>
       </div>
       
@@ -114,6 +118,7 @@ hide:
           <h3>DevOps Platform Product Owner</h3>
           <p class="timeline-period">Apr 2018 - Aug 2020</p>
           <p>First product person in Corporate engineering, scaling GitLab from 50 to 10k users. Ran a million-dollar migration project, reducing costs by $500k. Built a Slackbot community of 150+ technologists and measured DORA metrics before it was mainstream.</p>
+          <button class="read-more-btn" data-template="tmpl-devops-product-owner">Read more</button>
         </div>
       </div>
       
@@ -125,6 +130,7 @@ hide:
           <h3>Product Owner/Solutions Engineer</h3>
           <p class="timeline-period">Jan 2017 - May 2018</p>
           <p>Started during fire drills, learned enterprise dynamics, and built self-service migration tools. Developed relationships across teams and executives, making a name as a collaborator who could get into meetings others couldn't access.</p>
+          <button class="read-more-btn" data-template="tmpl-product-owner-solutions">Read more</button>
         </div>
       </div>
       
@@ -136,6 +142,7 @@ hide:
           <h3>Web Design & Marketing Consultant</h3>
           <p class="timeline-period">Jan 2014 - Jun 2021</p>
           <p>Built ~50 custom websites and web apps, scaling from LAMP to AWS with load balancers and autoscaling. This side hustle provided the perfect foundation for my Disney cloud migration work and taught me rapid prototyping and modular design.</p>
+          <button class="read-more-btn" data-template="tmpl-webdesign-consultant">Read more</button>
         </div>
       </div>
       
@@ -147,6 +154,7 @@ hide:
           <h3>Partner & Program Mgmt: Lenovo Consultant</h3>
           <p class="timeline-period">Jun 2016 - Jan 2017</p>
           <p>First big company experience at Zones LLC, working with Lenovo. Developed GTM channel strategy, managed $25M+ quarterly pipeline, and created cross-brand programs that helped every brand exceed their targets. Learned the intersection of business and technology.</p>
+          <button class="read-more-btn" data-template="tmpl-lenovo-consultant">Read more</button>
         </div>
       </div>
       
@@ -158,6 +166,7 @@ hide:
           <h3>Technical Marketing Associate</h3>
           <p class="timeline-period">Jan 2016 - Jun 2016</p>
           <p>Rhino Security Labs - Led remote dev team on website redesign, built automated CRM pipelines, and helped launch their first managed service provider offering. Learned that automation is key to scaling security operations.</p>
+          <button class="read-more-btn" data-template="tmpl-tech-marketing-assoc">Read more</button>
         </div>
       </div>
       
@@ -169,6 +178,7 @@ hide:
           <h3>Director of Marketing PNW</h3>
           <p class="timeline-period">Dec 2013 - Jun 2016</p>
           <p>Xperience Adventures - My first startup! Grew events from dozens to 200+ by developing remote planning models and partnerships. Learned to hustle, say yes to challenges, and that good things happen through motion and win-win situations.</p>
+          <button class="read-more-btn" data-template="tmpl-director-marketing-pnw">Read more</button>
         </div>
       </div>
       
@@ -180,6 +190,7 @@ hide:
           <h3>Founder, Central Munchies</h3>
           <p class="timeline-period">Apr 2014 - Dec 2015</p>
           <p>College startup solving late-night food delivery in Ellensburg. Built a mobile web-app through three full rewrites, adding 12 features beyond the original POC. Learned rapid iteration, user research, and the full startup journey from problem to solution.</p>
+          <button class="read-more-btn" data-template="tmpl-central-munchies">Read more</button>
         </div>
       </div>
     </div>
@@ -329,21 +340,13 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.style.overflow = '';
   }
 
-  document.querySelectorAll('.timeline-item').forEach(item => {
-    item.style.cursor = 'pointer';
-    item.addEventListener('click', () => {
-      const titleEl = item.querySelector('.timeline-content h3');
-      if (!titleEl) return;
-      const rawTitle = titleEl.textContent.trim();
-      // Find matching key by startsWith to accommodate longer headings
-      const matchKey = Object.keys(titleToTemplate).find(k => rawTitle.startsWith(k));
-      const tmplId = matchKey ? titleToTemplate[matchKey] : null;
+  document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const tmplId = btn.getAttribute('data-template');
       if (tmplId) {
         const tmpl = document.getElementById(tmplId);
         if (tmpl) openModal(tmpl.innerHTML);
-      } else {
-        // Fallback: show the summary content
-        openModal(item.querySelector('.timeline-content').innerHTML);
       }
     });
   });
@@ -685,6 +688,29 @@ document.addEventListener('DOMContentLoaded', function() {
   color: #94a3b8;
   line-height: 1.6;
   margin: 0;
+}
+
+.read-more-btn {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: #60a5fa;
+  border: 1px solid #60a5fa;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: #60a5fa;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(96, 165, 250, 0.3);
 }
 
 /* Values Grid */
