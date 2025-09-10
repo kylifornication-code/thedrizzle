@@ -20,6 +20,8 @@ theme:
     - navigation.tabs
   favicon: img/favicon.ico
   logo: img/logo.png
+  icon:
+    repo: fontawesome/brands/gitlab
 
 nav:
   - Home: index.md
@@ -50,6 +52,9 @@ extra:
     name: kylifornication on Instagram
     link: https://www.instagram.com/kylifornication/
   generator: false
+
+repo_url: https://gitlab.com/kylifornication/thedrizzle
+repo_name: The Drizzle
 
 hooks:
   - hooks/socialmedia.py
