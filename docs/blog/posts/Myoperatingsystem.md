@@ -38,6 +38,7 @@ Mindset is the foundation of how I approach leadership and life. It reflects wha
 - I don’t believe I’d be where I’m at without others - it takes a village  
 - I like to challenge the default - what got us here won’t get us there  
 - There’s few places where people are moved physically and emotionally (concerts, weddings, etc). I strive to be a leader that evokes this phenomenon  
+- I’m *still* and _always_ learning.
 
 ---
 
@@ -47,7 +48,8 @@ Actions are the outward expressions of my leadership. They are how my beliefs tr
 - I think most of the day about how I can help people through making for them  
 - I search for human moments and rawness in the conversations I have  
 - I treat feedback and people’s time as a gift  
-- I telegraph my thought process, how delivery happens, and my direction  
+- I telegraph my thought process, how delivery happens, and my direction 
+- Life happens fast when you display a sense of urgency. 
 
 ---
 
@@ -56,6 +58,7 @@ Habits are the rhythms and rituals I practice that reinforce my mindset and keep
 
 - I constantly fall in love with the process of improvement and learning  
 - I strive to build a rhythm to leading, working, and executing. I love to make things rehearse-able and practiced - it gets us close to perfect  
+- My habits equate to how my operating systems runs in aggregate. 
 
 ---
 
