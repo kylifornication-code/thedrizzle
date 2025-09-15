@@ -17,6 +17,9 @@ authors:
 </figure>
 
 !!! Preface
+    ### Check out the project here: 
+    [AI Text Detector Project](https://gitlab.com/kylifornication/ai-text-detector-for-chrome)
+    
     ### What I built and why I built it: 
 
     A modularized MCP powered Chrome plugin that allows one to rght click on text in their browser and choose a couple different options to analyze the text. 
