@@ -12,7 +12,7 @@ authors:
 ---
 
 <figure markdown="span">
-![Misogi](../../img/ai-text-detector.png)
+![AI Content Analyzer](../../img/ai-text-detector.png)
   <figcaption>Courtesy of my mad Canva skills</figcaption>
 </figure>
 
@@ -22,13 +22,15 @@ authors:
     
     ### What I built and why I built it: 
 
-    A modularized MCP powered Chrome plugin that allows one to rght click on text in their browser and choose a couple different options to analyze the text. 
+    A modularized MCP powered Chrome plugin that allows one to right click on text in their browser and choose a couple different options to analyze the text. 
 
     I built this tool because I'm starting some graduate studies in the fall and I've heard the submissions are reviewed for AI. I often use AI but don't rely on it and want to assure what I'm writing doesn't get flagged. I've also been interested in using FAST API to build an MCP server, especially with docker. And I believe the best way to learn is to *do*.
 
     ### Why it matters: 
 
     Many AI validation tools like Grammarly and others require you to copy and paste text into their sites/portals to evaluate it. Personally, the UX flow just isn't great, unless you're having it review large papers. Apple recently came out with "Writing Tools" built into Apple Intelligence in the context menu and it covers typical AI use cases like proofreading, summarization, rewriting, and making the writing sound different (friendly, professional, concise). It doesn't cover use cases for analyzing text for AI drafting like what I was looking for. I often look for tooling that is easy to use, easy to build upon, and easy to customize. 
+
+    **Also, ever wonder if someone uses AI in their social posts?** I've wondered the same as a scroll on LinkedIn. This tool lets me check whenever I'm curious. 🤔
 
 <!-- more -->
 
@@ -40,6 +42,7 @@ I knew when I got started on this project that I wanted to build something fast.
     I'm looking to build a project that helps me evaluate my writing for AI and the likelihood of it being AI generated. Below are some goals, technology I'd like to work with, and constraints. Provide me 3 different options that could help me decide what I can pursue, include pros and cons.
     
     Technology:
+
     - MCP framework
     - FAST API
     - Python
@@ -47,6 +50,7 @@ I knew when I got started on this project that I wanted to build something fast.
     - OpenAI Pro Account
     
     Constraints: 
+
     - Must be selectable in the context menu while in a browser
     - Must be modular so I can add features to it without much overhead
     - Must be able to run locally
@@ -59,15 +63,54 @@ The suggestions it gave ranged from a local docker listener that read all text o
 
 ## Key aspects of building a Chrome Plugin
 
-This was my first Chrome plugin project so I needed to do some research into how to approach it. From a general point of view, this is something AI does well but when you get into the deep part of supported classes and targeting specific versions of packages and APIs this is something I've seen AI not do well; and I've spent hours troubleshooting hallucinations and reverting because of how much code needs to be evaluated. I usually approach learning new coding projects trying to understand it as a system - what is the file layout
-    
+This was my first Chrome plugin project so I needed to do some research into how to approach it. From a general point of view, this is something AI does well but when you get into the deep part of supported classes and targeting specific versions of packages and APIs this is something I've seen AI not do well; and I've spent hours troubleshooting hallucinations and reverting because of how much code needs to be evaluated. I usually approach learning new coding projects trying to understand it as a system - what is the dir/file structure?, what configurations are modularized or need to made modular?, and how can I make the least amount of changes without overworking the problem?
 
+I learned: 
 
+- Most configuration is in the manifest.json file in the root of the repo. If your plugin is being loaded in locally, it's even more simple. Things like permissions, access, the name of the plugin are all in this config file. 
+- If you're doing on-screen triggers or listening, you'll have a background.js in the root also that also enables on screen interactions like pop-ups and it provides a lot of flexibility based on what data you can provide out of your backend. 
 
+``` json
+{
+  "manifest_version": 3,
+  "name": "AI Content Analyzer",
+  "version": "2.0",
+  "description": "Modular text analysis tools with multiple right-click functions",
+  "permissions": ["contextMenus", "scripting", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
+```
 
+## Watch the video of how it works
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EQunuJtcmjU?si=WpQbgEpa1RmLBS4K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+## Dead Internet Theory - AI everywhere
 
+The [dead internet theory](https://en.wikipedia.org/wiki/Dead_Internet_theory) has gained a lot of popularity, especially since social platforms like Meta and X have mentioned that they're [introduce bots to respond to people](https://www.forbes.com/sites/chriswestfall/2025/01/02/meta-opens-floodgates-on-ai-generated-accounts-on-facebook-instagram/). Most platforms nowadays even make it that much easier to have AI write and rewrite your posts, making them more friendly, concise, and full of em dashes (-) and emojis. 
 
+I'm not going to beat this drum more than you're already going to see online, but I'll share some interesting articles that share stats on the trends of AI that I've found interesting. 
+
+- [National Institute: AI Stats/Trends](https://www.nu.edu/blog/ai-statistics-trends/)
+    - 9 in 10 students want to learn more about AI in school.9
+    - More than half (54%) could tell the difference between human and AI-generated content.9
+    - About 2 out of 3 (67%) people would use ChatGPT instead of Google.9
+- [Menlo Ventures](https://menlovc.com/perspective/2025-the-state-of-consumer-ai/)
+    - <figure markdown="span">
+![MenloVC](../../img/MenloVC2025.png)</figure>
+- [Stanford: 2025 AI Index](https://hai.stanford.edu/ai-index/2025-ai-index-report)
+    - "In 2023, the FDA approved 223 AI-enabled medical devices, up from just six in 2015."
+- [Buffer Blog: How AI gets more engagement on Social than real people](https://buffer.com/resources/ai-assistant-post-performance/)
+    - 1.2M social posts across platforms with 15k posters using AI and non-AI posts, "...combining the data across all platforms, the median engagement rate for non-AI posts is 4.82 percent, while AI-assisted posts have a higher rate at 5.87 percent."
+
+## Summary
+
+This project taught me that AI is harder to spot than ever before, and it's going to be even more ubiquitous overtime. I still feel like I have a pretty keen eye for it, but as I've started analyzing my own content and others I've realized that in some cases it's easier to guess than be completely objective about it; most of the time my project gives medium readings.
+
+AI is a great tool, there is no doubt about it. I'll still use it for reviewing my emails when it's a tough conversation or my blog posts to make sure I'm not misspelling anything. While I don't like it building me complete projects, because reviewing thousands of lines of code is *hard*, I'll still have it helping me autocomplete my code and help me research. 
+
+At the end of the day, I’ll keep building tools like this not because I distrust AI, but because I care about keeping my own voice intact.
 
 
