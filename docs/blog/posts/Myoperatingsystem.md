@@ -13,7 +13,7 @@ authors:
 ---
 
 <figure markdown="span">
-![Misogi](../../img/MeOS.png)
+![MeOS](../../img/MeOS.png)
   <figcaption>Courtesy of my mad Canva skills</figcaption>
 </figure>
 
