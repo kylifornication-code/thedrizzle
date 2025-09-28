@@ -26,17 +26,20 @@ authors:
 
 <!-- more -->
 
-## Previous 10-day Forecast
+## 💦 Previous 14-day Forecast
 
 - Background on the last couple weeks and what I've been wanting to build
+- Digital Inspo: 
 - Building your teams AI Fluency - Mine and my teams goal, where I got it from
+- Spec Driven Dev vs PRDs - 
 - Your job/role is dead because of AI: LinkedIn Hype, get with the times
-- 
 
 !!! example "Watch the Demo"
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/vREoUiqUNbg?si=-4KLBHJCPdU9eSR-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Digital Drizzle: Interesting Links/Stories
+## 🖇️ Digital Drizzle: Interesting Links/Stories
 - 
+
+<span><center>[☕ Buy me a Coffee](https://buymeacoffee.com/kylifornication){ .md-button .md-button--primary .md-button--coffee target="_blank" rel="noopener" }</center></span>
 

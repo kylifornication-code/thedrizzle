@@ -13,7 +13,8 @@ hide:
       <div class="hero-text">
         <h1 class="hero-title">Welcome to The Drizzle</h1>
         <p class="hero-subtitle">Personal Stories from the PNW</p>
-        <p class="hero-description">I'm KJ, a passionate technologist and maker. Every so often I'll give you a drizzle of content from the place where it's always raining. This is my digital space where I share my operating system — how I think and work.</p>
+        <p class="hero-description">I'm KJ, a passionate technologist and maker. Every so often I'll give you a drizzle of content from the place where it's always raining. This is my digital space where I share my operating system — how I think and work. Like what I do and want to support me? <a href="https://buymeacoffee.com/kylifornication">Buy me a coffee!</a></p>
+
         <div class="hero-buttons">
           <a href="aboutme" class="btn btn-primary">About Me</a>
           <a href="projects" class="btn btn-secondary">My Projects</a>
