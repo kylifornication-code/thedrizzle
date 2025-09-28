@@ -16,7 +16,7 @@ authors:
   <figcaption>Courtesy of my mad Canva skills</figcaption>
 </figure>
 
-!!! Preface
+!!! abstract "Project Overview"
     ### Check out the project here: 
     [AI Text Detector Project](https://gitlab.com/kylifornication/ai-text-detector-for-chrome)
     
@@ -38,7 +38,7 @@ authors:
 
 I knew when I got started on this project that I wanted to build something fast. I love rapid prototyping and with AI it's really ignited my passion for learning and building out my ideas quickly to a proof of concept (PoC). Here's a few prompts I used to get started on this that helped me make decisions on which direction to go in. 
 
-!!! Prompt Question
+!!! question "My Prompt"
     I'm looking to build a project that helps me evaluate my writing for AI and the likelihood of it being AI generated. Below are some goals, technology I'd like to work with, and constraints. Provide me 3 different options that could help me decide what I can pursue, include pros and cons.
     
     Technology:
