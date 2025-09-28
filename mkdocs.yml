@@ -64,6 +64,9 @@ extra:
   - icon: fontawesome/brands/instagram
     name: kylifornication on Instagram
     link: https://www.instagram.com/kylifornication/
+  - icon: fontawesome/brands/youtube
+    name: kylifornication on YouTube
+    link: https://www.youtube.com/@kylifornication11
   generator: false
 
 repo_url: https://gitlab.com/kylifornication/thedrizzle
