@@ -16,7 +16,7 @@ authors:
   <figcaption>Courtesy of my mad Canva skills</figcaption>
 </figure>
 
-!!! Preface
+!!! abstract "Project Overview"
     ### Check out the project here: 
     [AI Text Detector Project](https://gitlab.com/kylifornication/ai-text-detector-for-chrome)
     
@@ -26,11 +26,11 @@ authors:
 
     I built this tool because I'm starting some graduate studies in the fall and I've heard the submissions are reviewed for AI. I often use AI but don't rely on it and want to assure what I'm writing doesn't get flagged. I've also been interested in using FAST API to build an MCP server, especially with docker. And I believe the best way to learn is to *do*.
 
+    **Also, ever wonder if someone uses AI in their social posts?** I've wondered the same as a scroll on LinkedIn. This tool lets me check whenever I'm curious. 🤔
+
     ### Why it matters: 
 
     Many AI validation tools like Grammarly and others require you to copy and paste text into their sites/portals to evaluate it. Personally, the UX flow just isn't great, unless you're having it review large papers. Apple recently came out with "Writing Tools" built into Apple Intelligence in the context menu and it covers typical AI use cases like proofreading, summarization, rewriting, and making the writing sound different (friendly, professional, concise). It doesn't cover use cases for analyzing text for AI drafting like what I was looking for. I often look for tooling that is easy to use, easy to build upon, and easy to customize. 
-
-    **Also, ever wonder if someone uses AI in their social posts?** I've wondered the same as a scroll on LinkedIn. This tool lets me check whenever I'm curious. 🤔
 
 <!-- more -->
 
@@ -38,7 +38,7 @@ authors:
 
 I knew when I got started on this project that I wanted to build something fast. I love rapid prototyping and with AI it's really ignited my passion for learning and building out my ideas quickly to a proof of concept (PoC). Here's a few prompts I used to get started on this that helped me make decisions on which direction to go in. 
 
-!!! Prompt Question
+!!! question "My Prompt"
     I'm looking to build a project that helps me evaluate my writing for AI and the likelihood of it being AI generated. Below are some goals, technology I'd like to work with, and constraints. Provide me 3 different options that could help me decide what I can pursue, include pros and cons.
     
     Technology:

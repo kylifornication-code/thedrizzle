@@ -4,6 +4,8 @@ hide:
   - navigation
 ---
 
+<link rel="preload" href="img/drizzle-hero.png" as="image" type="image/png">
+
 <div class="modern-homepage">
   <!-- Hero Section -->
   <section class="hero-section">
@@ -11,14 +13,21 @@ hide:
       <div class="hero-text">
         <h1 class="hero-title">Welcome to The Drizzle</h1>
         <p class="hero-subtitle">Personal Stories from the PNW</p>
-        <p class="hero-description">I'm KJ, a passionate technologist and maker. Every so often I'll give you a drizzle of content from the place where it's always raining. This is my digital space where I share my operating system — how I think and work.</p>
+        <p class="hero-description">I'm KJ, a passionate technologist and maker. Every so often I'll give you a drizzle of content from the place where it's always raining. This is my digital space where I share my operating system — how I think and work. Like what I do and want to support me? <a href="https://buymeacoffee.com/kylifornication">Buy me a coffee!</a></p>
+
         <div class="hero-buttons">
           <a href="aboutme" class="btn btn-primary">About Me</a>
           <a href="projects" class="btn btn-secondary">My Projects</a>
         </div>
       </div>
       <div class="hero-image">
-        <img src="img/drizzle-hero.png" alt="The Drizzle Hero" class="hero-img">
+        <div class="image-placeholder">
+          <div class="placeholder-content">
+            <div class="placeholder-icon">🌧️</div>
+            <div class="placeholder-text">Loading...</div>
+          </div>
+        </div>
+        <img src="img/drizzle-hero.png" alt="The Drizzle Hero" class="hero-img" loading="eager" width="500" height="333" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.image-placeholder').style.display='none'">
       </div>
     </div>
   </section>
@@ -189,15 +198,112 @@ hide:
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeInRight 0s ease-out 0.3s both;
+  animation: fadeInRight 1s ease-out 0.3s both;
+  /* Reserve space to prevent layout shift */
+  width: 100%;
+  max-width: 500px;
+  height: 333px; /* Fixed height to match aspect ratio */
+  margin: 0 auto;
+  position: relative;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.placeholder-content {
+  text-align: center;
+  color: #94a3b8;
+}
+
+.placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+.placeholder-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.1) 50%, 
+    transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+  z-index: 3;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
 }
 
 .hero-img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 1rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  transition: transform 0.1s ease;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  /* Prevent layout shift */
+  display: block;
+  opacity: 0;
+  animation: imageFadeIn 0.8s ease-out 0.5s forwards;
+  position: relative;
+  z-index: 2;
+  /* Ensure image maintains aspect ratio and doesn't cause reflow */
+  min-height: 333px;
+  max-height: 333px;
+}
+
+@keyframes imageFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .hero-img:hover {
@@ -361,6 +467,16 @@ hide:
     justify-content: center;
   }
   
+  .hero-image {
+    height: 250px; /* Smaller height on mobile */
+    max-width: 100%;
+  }
+  
+  .hero-img {
+    min-height: 250px;
+    max-height: 250px;
+  }
+  
   .about-grid {
     grid-template-columns: 1fr;
   }
@@ -378,6 +494,15 @@ hide:
   
   .hero-title {
     font-size: 2rem;
+  }
+  
+  .hero-image {
+    height: 200px; /* Even smaller on very small screens */
+  }
+  
+  .hero-img {
+    min-height: 200px;
+    max-height: 200px;
   }
   
   .about-section,

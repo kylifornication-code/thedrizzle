@@ -16,15 +16,16 @@ authors:
   <figcaption>Courtesy of ChatGPT</figcaption>
 </figure>
 
+!!! note "Why This Matters "
+    Mobile‑network surveillance tools — better known as [**IMSI‑catchers**](https://sls.eff.org/technologies/cell-site-simulators-imsi-catchers) or “Stingrays” — pretend to be legitimate cell towers so they can collect device identifiers or even downgrade encryption. They’re often deployed at protests, border crossings, and large public events, but ordinary users have almost no visibility when one is nearby. **Rayhunter** flips that script: with nothing more than a pocket‑sized hotspot, you can flag suspicious towers *in real time* and share your findings with the wider privacy community.
+
+<!-- more -->
+
 ## Background: Why I wanted to do this project
 
 I still remember my first taste of wardriving. My dad and I took a trip down the 101 highway from WA to CA and we "stayed" (slept in the parking lot of) motels on the way. Back then, my dad carried an old laptop with him wherever he went. He showed me how to get through the admin gateways of their wifi portals to get internet for free so we could spend the evenings watching movies together. Those nights still live in my memory rent free, but they also gave me a lot of purpose when I took my first networking and pen testing classes. Learning formally how networks worked and how to test web apps made me realize how lucky I was to have such a creative dad. 
 
 Fast forward to one of the startups I worked at, Rhino Security Labs, and I learned a lot about the owner/CEOs passion for network devices ([ProxyHam](https://www.wired.com/2015/07/online-anonymity-box-puts-mile-away-ip-address/)) and ended up going to my first security conferences and meetups. That's when I learned about IMSI catchers - network devices that capture cell traffic. I remember being warned not to carry my phone on me during these conferences and definitely not connecting to any networks. That is why when I saw [Chad Butler's LinkedIn post about Rayhunter](https://www.linkedin.com/posts/chaddbutler_meet-rayhunter-a-new-open-source-tool-from-activity-7304138561585393667-0ImT/), it ignited a passion I've had for a long time about privacy and understanding who could be watching what I'm looking at. 
-
-!!! note
-    ## Why This Matters  
-    Mobile‑network surveillance tools — better known as [**IMSI‑catchers**](https://sls.eff.org/technologies/cell-site-simulators-imsi-catchers) or “Stingrays” — pretend to be legitimate cell towers so they can collect device identifiers or even downgrade encryption. They’re often deployed at protests, border crossings, and large public events, but ordinary users have almost no visibility when one is nearby. **Rayhunter** flips that script: with nothing more than a pocket‑sized hotspot, you can flag suspicious towers *in real time* and share your findings with the wider privacy community.
 
 ---
 
@@ -39,8 +40,6 @@ Once flashed onto a supported hotspot (Orbit), it:
 * The Orbit flashes a **green** or **red** status bar on the device screen for at‑a‑glance awareness. 
 
 While it's early in development ([download it here from GitHub](https://github.com/EFForg/rayhunter)), you can download it on your [Orbit device](https://www.amazon.com/Orbic-Verizon-Hotspot-Connect-Enabled/dp/B08N3CHC4Y) so you can monitor who could be monitoring _you_. 
-
-<!-- more -->
 
 ## Who Should Try It & Real‑World Use‑Cases  
 
