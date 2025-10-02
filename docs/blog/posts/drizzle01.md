@@ -45,6 +45,7 @@ authors:
     - [Gil Yehuda's blog](https://www.gilyehuda.com/): Gil Yehuda (Great if you're into OSS Management, he leads [OSS at Yahoo](https://developer.yahoo.com/opensource/))
     - [Rohit Krishnan's blog](https://www.strangeloopcanon.com/): Strangeloop Canon (Lots of AI content)
     - [Jasmine Robinson's blog](https://genaisecretsauce.com/): Gen AI Secret Sauce (AI Change Agent Content)
+- [Building continuous AI PRDs](https://www.productcompass.pm/p/ai-prd-template) as a method for iterating and managing product requirements.
 - Want to try SDD? GitHub built a framework called [Specify](https://github.com/github/spec-kit/blob/main/spec-driven.md) to facilitate SDD, it's fairly automated, easy to use, and free! [Check out this video from the Product Mgr on how to use it](https://www.youtube.com/watch?v=a9eR1xsfvHg).
 - If you like the idea of SDD you should also take a look at a leaner version of it, using [Agents.md](https://agents.md/).
 - Aakash Gupta also has a cool post on PRDs vs prompts too. [Take a look here](https://www.linkedin.com/posts/aagupta_goodbye-10-page-prds-hello-modern-ai-era-ugcPost-7363033858126094336-Io76?utm_source=share&utm_medium=member_desktop&rcm=ACoAABG8D6QBJzg4ghan3DNubQkBb-v-ML_H5g4).

@@ -6,258 +6,258 @@ hide:
 
 <div class="modern-about-page">
   <!-- Hero Section -->
-  <section class="about-hero-section">
-    <div class="about-hero-content">
-      <div class="about-hero-text">
-        <h1 class="about-hero-title">About Me</h1>
-        <p class="about-hero-subtitle">My Story and Why I Built The Drizzle</p>
-        <p class="about-hero-description">From PNW roots to tech leadership, here's the journey that shaped my approach to building, leading, and creating in the digital world.</p>
-      </div>
-      <div class="about-hero-image">
-        <img src="../img/spaceneedle.png" alt="Space Needle" class="about-hero-img">
-        <p class="image-attribution">Courtesy of Google Whisk AI</p>
-      </div>
+<section class="about-hero-section">
+  <div class="about-hero-content">
+    <div class="about-hero-text">
+      <h1 class="about-hero-title">About Me</h1>
+      <p class="about-hero-subtitle">My Story and Why I Built The Drizzle</p>
+      <p class="about-hero-description">From PNW roots to tech leadership, here's the journey that shaped my approach to building, leading, and creating in the digital world.</p>
     </div>
-  </section>
+    <div class="about-hero-image">
+      <img src="../img/spaceneedle.png" alt="Space Needle" class="about-hero-img">
+      <p class="image-attribution">Courtesy of Google Whisk AI</p>
+    </div>
+  </div>
+</section>
 
   <!-- Main Content -->
-  <div class="about-content">
+<div class="about-content">
     <!-- Life Section -->
-    <section class="about-section">
-      <h2 class="section-title">Behind the Scenes: Life</h2>
-      <div class="story-cards">
-        <div class="story-card">
-          <div class="card-icon">👨‍👩‍👧‍👦</div>
-          <h3>Family First</h3>
-          <p>My family is a huge part of my life. Between my son's sports and my own athletic events, our schedule stays packed. I'm grateful to have an active family and a home filled with things we've built ourselves.</p>
-          <div class="card-highlight">From the dining room table to custom library shelves, my wife and I are always working on new projects and taking every opportunity to create with our hands.</div>
-        </div>
-        
-      <div class="story-card">
-        <div class="card-icon">🏔️</div>
-        <h3>PNW Roots</h3>
-        <p>You'll often find us on the slopes, hiking trails, or doing all the typical PNW activities. I grew up in a small town called Hoquiam—meaning "Hungry for Wood"—with parents who were always working on houses, cars, or whatever project my dad could find to flip.</p>
-        <div class="card-highlight">Their hustle taught me the value of hard work.</div>
-      </div>
-      
-      <div class="story-card">
-        <div class="card-icon">🏃‍♂️</div>
-        <h3>Competitive Spirit</h3>
-        <p>Playing sports year-round and into college shaped me into both a team player and a leader. If you're around me long enough, you'll probably end up running with me, pushing past your limits, or trying something that challenges you.</p>
-        <div class="card-highlight">My competitive nature and background drive me to constantly strive for more in everything I do.</div>
-      </div>
+<section class="about-section">
+  <h2 class="section-title">Behind the Scenes: Life</h2>
+  <div class="story-cards">
+    <div class="story-card">
+      <div class="card-icon">👨‍👩‍👧‍👦</div>
+      <h3>Family First</h3>
+      <p>My family is a huge part of my life. Between my son's sports and my own athletic events, our schedule stays packed. I'm grateful to have an active family and a home filled with things we've built ourselves.</p>
+      <div class="card-highlight">From the dining room table to custom library shelves, my wife and I are always working on new projects and taking every opportunity to create with our hands.</div>
     </div>
     
-    <!-- Bo Schembechler Quote Section -->
-    <div class="quote-section">
-      <blockquote class="inspirational-quote">
-        <p>"The late great Bo Schembechler's 'The Team' speech still rings in my ears when I think about how some of the best coaches built their teams."</p>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/UrvwWfIeHu0?si=kGaZ0zM8uPsuEtTD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      </blockquote>
-    </div>
-  </section>
+  <div class="story-card">
+    <div class="card-icon">🏔️</div>
+    <h3>PNW Roots</h3>
+    <p>You'll often find us on the slopes, hiking trails, or doing all the typical PNW activities. I grew up in a small town called Hoquiam—meaning "Hungry for Wood"—with parents who were always working on houses, cars, or whatever project my dad could find to flip.</p>
+    <div class="card-highlight">Their hustle taught me the value of hard work.</div>
+  </div>
+  
+  <div class="story-card">
+    <div class="card-icon">🏃‍♂️</div>
+    <h3>Competitive Spirit</h3>
+    <p>Playing sports year-round and into college shaped me into both a team player and a leader. If you're around me long enough, you'll probably end up running with me, pushing past your limits, or trying something that challenges you.</p>
+    <div class="card-highlight">My competitive nature and background drive me to constantly strive for more in everything I do.</div>
+  </div>
+</div>
+
+<!-- Bo Schembechler Quote Section -->
+<div class="quote-section">
+  <blockquote class="inspirational-quote">
+    <p>"The late great Bo Schembechler's 'The Team' speech still rings in my ears when I think about how some of the best coaches built their teams."</p>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/UrvwWfIeHu0?si=kGaZ0zM8uPsuEtTD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  </blockquote>
+</div>
+</section>
 
   <!-- Work Section -->
-  <section class="about-section">
-    <h2 class="section-title">Behind the Scenes: Work</h2>
-    <div class="work-content">
-      <div class="work-image">
-        <img src="../img/castle.png" alt="Office" class="work-img">
-        <p class="image-attribution">Courtesy of Google Whisk AI</p>
-      </div>
-      <div class="timeline-container">
-        <div class="timeline-scroll" id="timeline-scroll">
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <div class="timeline-icon">🚀</div>
-              </div>
-              <div class="timeline-content">
-                <h3>Sr Manager, Security Engineering Partnerships</h3>
-                <p class="timeline-period">Mar 2025 - Present</p>
-                <p>Leading security engineering partnerships and driving strategic initiatives across Disney's security landscape. Building bridges between security teams and engineering organizations to create more secure products and experiences.</p>
-                <button class="read-more-btn" data-template="tmpl-sr-manager">Read more</button>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <div class="timeline-icon">🔓</div>
-              </div>
-              <div class="timeline-content">
-                <h3>Sr Staff Security Engineer | Manager</h3>
-                <p class="timeline-period">Aug 2022 - Mar 2025</p>
-                <p>Secured the magic by making security a resume-worthy accolade for developers. Managed enterprise-wide secure development services and programs focused on developer enablement, overseeing tools like Snyk, Whitehat, Checkmarx, and Tenable.</p>
-                <button class="read-more-btn" data-template="tmpl-sr-staff-secmgr">Read more</button>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <div class="timeline-icon">⚙️</div>
-              </div>
-              <div class="timeline-content">
-                <h3>Sr Software Product Engineer, DevOps Platforms</h3>
-                <p class="timeline-period">Sep 2021 - Dec 2022</p>
-                <p>Led 4 functional engineering teams across entitlements, billing automation, and engineering tools. Focused on ecosystem strategy, reducing enterprise licensing spend, and representing Disney at external events like DevOps Days and AWS RE:Invent.</p>
-                <button class="read-more-btn" data-template="tmpl-sr-software-prod-eng">Read more</button>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <div class="timeline-icon">📈</div>
-              </div>
-              <div class="timeline-content">
-                <h3>Senior Product Manager, Developer Enablement</h3>
-                <p class="timeline-period">Aug 2020 - Sep 2021</p>
-                <p>Navigated the 21st Century Fox acquisition, rationalizing $2.5M in duplicate service contracts. Led GitHub.com approval across the company and consolidated multiple contracts, saving $1.2M in licensing costs.</p>
-                <button class="read-more-btn" data-template="tmpl-senior-pm-dev-enablement">Read more</button>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <div class="timeline-icon">🔧</div>
-              </div>
-              <div class="timeline-content">
-                <h3>DevOps Platform Product Owner</h3>
-                <p class="timeline-period">Apr 2018 - Aug 2020</p>
-                <p>First product person in Corporate engineering, scaling GitLab from 50 to 10k users. Ran a million-dollar migration project, reducing costs by $500k. Built a Slackbot community of 150+ technologists and measured DORA metrics before it was mainstream.</p>
-                <button class="read-more-btn" data-template="tmpl-devops-product-owner">Read more</button>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <div class="timeline-icon">🎯</div>
-              </div>
-              <div class="timeline-content">
-                <h3>Product Owner/Solutions Engineer</h3>
-                <p class="timeline-period">Jan 2017 - May 2018</p>
-                <p>Started during fire drills, learned enterprise dynamics, and built self-service migration tools. Developed relationships across teams and executives, making a name as a collaborator who could get into meetings others couldn't access.</p>
-                <button class="read-more-btn" data-template="tmpl-product-owner-solutions">Read more</button>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <div class="timeline-icon">💻</div>
-              </div>
-              <div class="timeline-content">
-                <h3>Web Design & Marketing Consultant</h3>
-                <p class="timeline-period">Jan 2014 - Jun 2021</p>
-                <p>Built ~50 custom websites and web apps, scaling from LAMP to AWS with load balancers and autoscaling. This side hustle provided the perfect foundation for my Disney cloud migration work and taught me rapid prototyping and modular design.</p>
-                <button class="read-more-btn" data-template="tmpl-webdesign-consultant">Read more</button>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <div class="timeline-icon">🏢</div>
-              </div>
-              <div class="timeline-content">
-                <h3>Partner & Program Mgmt: Lenovo Consultant</h3>
-                <p class="timeline-period">Jun 2016 - Jan 2017</p>
-                <p>First big company experience at Zones LLC, working with Lenovo. Developed GTM channel strategy, managed $25M+ quarterly pipeline, and created cross-brand programs that helped every brand exceed their targets. Learned the intersection of business and technology.</p>
-                <button class="read-more-btn" data-template="tmpl-lenovo-consultant">Read more</button>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <div class="timeline-icon">🔒</div>
-              </div>
-              <div class="timeline-content">
-                <h3>Technical Marketing Associate</h3>
-                <p class="timeline-period">Jan 2016 - Jun 2016</p>
-                <p>Rhino Security Labs - Led remote dev team on website redesign, built automated CRM pipelines, and helped launch their first managed service provider offering. Learned that automation is key to scaling security operations.</p>
-                <button class="read-more-btn" data-template="tmpl-tech-marketing-assoc">Read more</button>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <div class="timeline-icon">🏃‍♂️</div>
-              </div>
-              <div class="timeline-content">
-                <h3>Director of Marketing PNW</h3>
-                <p class="timeline-period">Dec 2013 - Jun 2016</p>
-                <p>Xperience Adventures - My first startup! Grew events from dozens to 200+ by developing remote planning models and partnerships. Learned to hustle, say yes to challenges, and that good things happen through motion and win-win situations.</p>
-                <button class="read-more-btn" data-template="tmpl-director-marketing-pnw">Read more</button>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <div class="timeline-icon">🍕</div>
-              </div>
-              <div class="timeline-content">
-                <h3>Founder, Central Munchies</h3>
-                <p class="timeline-period">Apr 2014 - Dec 2015</p>
-                <p>College startup solving late-night food delivery in Ellensburg. Built a mobile web-app through three full rewrites, adding 12 features beyond the original POC. Learned rapid iteration, user research, and the full startup journey from problem to solution.</p>
-                <button class="read-more-btn" data-template="tmpl-central-munchies">Read more</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Floating Action Buttons -->
-        <div class="timeline-nav-fabs">
-          <button class="fab fab-prev" id="timeline-prev" aria-label="Previous position">
-            <span>↑</span>
-          </button>
-          <button class="fab fab-next" id="timeline-next" aria-label="Next position">
-            <span>↓</span>
-          </button>
-        </div>
-      </div>
+<section class="about-section">
+  <h2 class="section-title">Behind the Scenes: Work</h2>
+<div class="work-content">
+    <div class="work-image">
+      <img src="../img/castle.png" alt="Office" class="work-img">
+      <p class="image-attribution">Courtesy of Google Whisk AI</p>
     </div>
-  </section>
+<div class="timeline-container">
+<div class="timeline-scroll" id="timeline-scroll">
+<div class="timeline">
+<div class="timeline-item">
+  <div class="timeline-marker">
+    <div class="timeline-icon">🚀</div>
+  </div>
+  <div class="timeline-content">
+      <h3>Sr Manager, Security Engineering Partnerships</h3>
+      <p class="timeline-period">Mar 2025 - Present</p>
+      <p>Leading security engineering partnerships and driving strategic initiatives across Disney's security landscape. Building bridges between security teams and engineering organizations to create more secure products and experiences.</p>
+      <button class="read-more-btn" data-template="tmpl-sr-manager">Read more</button>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-marker">
+      <div class="timeline-icon">🔓</div>
+    </div>
+    <div class="timeline-content">
+      <h3>Sr Staff Security Engineer | Manager</h3>
+      <p class="timeline-period">Aug 2022 - Mar 2025</p>
+      <p>Secured the magic by making security a resume-worthy accolade for developers. Managed enterprise-wide secure development services and programs focused on developer enablement, overseeing tools like Snyk, Whitehat, Checkmarx, and Tenable.</p>
+      <button class="read-more-btn" data-template="tmpl-sr-staff-secmgr">Read more</button>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-marker">
+      <div class="timeline-icon">⚙️</div>
+    </div>
+    <div class="timeline-content">
+      <h3>Sr Software Product Engineer, DevOps Platforms</h3>
+      <p class="timeline-period">Sep 2021 - Dec 2022</p>
+      <p>Led 4 functional engineering teams across entitlements, billing automation, and engineering tools. Focused on ecosystem strategy, reducing enterprise licensing spend, and representing Disney at external events like DevOps Days and AWS RE:Invent.</p>
+      <button class="read-more-btn" data-template="tmpl-sr-software-prod-eng">Read more</button>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-marker">
+      <div class="timeline-icon">📈</div>
+    </div>
+    <div class="timeline-content">
+      <h3>Senior Product Manager, Developer Enablement</h3>
+      <p class="timeline-period">Aug 2020 - Sep 2021</p>
+      <p>Navigated the 21st Century Fox acquisition, rationalizing $2.5M in duplicate service contracts. Led GitHub.com approval across the company and consolidated multiple contracts, saving $1.2M in licensing costs.</p>
+      <button class="read-more-btn" data-template="tmpl-senior-pm-dev-enablement">Read more</button>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-marker">
+      <div class="timeline-icon">🔧</div>
+    </div>
+    <div class="timeline-content">
+      <h3>DevOps Platform Product Owner</h3>
+      <p class="timeline-period">Apr 2018 - Aug 2020</p>
+      <p>First product person in Corporate engineering, scaling GitLab from 50 to 10k users. Ran a million-dollar migration project, reducing costs by $500k. Built a Slackbot community of 150+ technologists and measured DORA metrics before it was mainstream.</p>
+      <button class="read-more-btn" data-template="tmpl-devops-product-owner">Read more</button>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-marker">
+      <div class="timeline-icon">🎯</div>
+    </div>
+    <div class="timeline-content">
+      <h3>Product Owner/Solutions Engineer</h3>
+      <p class="timeline-period">Jan 2017 - May 2018</p>
+      <p>Started during fire drills, learned enterprise dynamics, and built self-service migration tools. Developed relationships across teams and executives, making a name as a collaborator who could get into meetings others couldn't access.</p>
+      <button class="read-more-btn" data-template="tmpl-product-owner-solutions">Read more</button>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-marker">
+      <div class="timeline-icon">💻</div>
+    </div>
+    <div class="timeline-content">
+      <h3>Web Design & Marketing Consultant</h3>
+      <p class="timeline-period">Jan 2014 - Jun 2021</p>
+      <p>Built ~50 custom websites and web apps, scaling from LAMP to AWS with load balancers and autoscaling. This side hustle provided the perfect foundation for my Disney cloud migration work and taught me rapid prototyping and modular design.</p>
+      <button class="read-more-btn" data-template="tmpl-webdesign-consultant">Read more</button>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-marker">
+      <div class="timeline-icon">🏢</div>
+    </div>
+    <div class="timeline-content">
+      <h3>Partner & Program Mgmt: Lenovo Consultant</h3>
+      <p class="timeline-period">Jun 2016 - Jan 2017</p>
+      <p>First big company experience at Zones LLC, working with Lenovo. Developed GTM channel strategy, managed $25M+ quarterly pipeline, and created cross-brand programs that helped every brand exceed their targets. Learned the intersection of business and technology.</p>
+      <button class="read-more-btn" data-template="tmpl-lenovo-consultant">Read more</button>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-marker">
+      <div class="timeline-icon">🔒</div>
+    </div>
+    <div class="timeline-content">
+      <h3>Technical Marketing Associate</h3>
+      <p class="timeline-period">Jan 2016 - Jun 2016</p>
+      <p>Rhino Security Labs - Led remote dev team on website redesign, built automated CRM pipelines, and helped launch their first managed service provider offering. Learned that automation is key to scaling security operations.</p>
+      <button class="read-more-btn" data-template="tmpl-tech-marketing-assoc">Read more</button>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-marker">
+      <div class="timeline-icon">🏃‍♂️</div>
+    </div>
+    <div class="timeline-content">
+      <h3>Director of Marketing PNW</h3>
+      <p class="timeline-period">Dec 2013 - Jun 2016</p>
+      <p>Xperience Adventures - My first startup! Grew events from dozens to 200+ by developing remote planning models and partnerships. Learned to hustle, say yes to challenges, and that good things happen through motion and win-win situations.</p>
+      <button class="read-more-btn" data-template="tmpl-director-marketing-pnw">Read more</button>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-marker">
+      <div class="timeline-icon">🍕</div>
+    </div>
+    <div class="timeline-content">
+      <h3>Founder, Central Munchies</h3>
+      <p class="timeline-period">Apr 2014 - Dec 2015</p>
+      <p>College startup solving late-night food delivery in Ellensburg. Built a mobile web-app through three full rewrites, adding 12 features beyond the original POC. Learned rapid iteration, user research, and the full startup journey from problem to solution.</p>
+      <button class="read-more-btn" data-template="tmpl-central-munchies">Read more</button>
+  </div>
+  </div>
+</div>
+</div>
+        <!-- Floating Action Buttons -->
+  <div class="timeline-nav-fabs">
+    <button class="fab fab-prev" id="timeline-prev" aria-label="Previous position">
+      <span>↑</span>
+    </button>
+    <button class="fab fab-next" id="timeline-next" aria-label="Next position">
+      <span>↓</span>
+    </button>
+  </div>
+</div>
+</div>
+</section>
 
   <!-- Values Section -->
-  <section class="about-section">
-    <h2 class="section-title">Behind the Scenes: Core Values</h2>
-    <div class="values-grid">
-      <div class="value-card">
-        <div class="value-icon">🤝</div>
-        <h3>Leadership+Teamwork</h3>
-        <p>I'm a big believer that leaders lead - no matter what. I started playing team sports when I was 4yr old and I can't remember a time I wasn't on a team. Teamwork is the entry fee for being a leader and I believe I was built to lead. It's something I gravitate towards and flex leading from the back and allowing others to lead the way and from the front where I break ground and show what can be done.</p>
-      </div>
-      
-      <div class="value-card">
-        <div class="value-icon">💎</div>
-        <h3>Integrity</h3>
-        <p>Integrity is table stakes in life. As my career has progressed and life has become heavier with responsibility, I've found being and showing high integrity keeps me grounded. Some know it as karma, but I believe what you put out into the world is what you get back.</p>
-      </div>
-      
-      <div class="value-card">
-        <div class="value-icon">⚙️</div>
-        <h3>Curiosity+Humility</h3>
-        <p>I think of curiosity and humility as the same coin with different sides. They're part of my core values because curiosity is a core fundamental of learning and humility is a fundamental of openness. I'm innately curious and I've developed the emotional intelligence to have humility to new experiences, learnings, and what life throws at me.</p>
-      </div>
+<section class="about-section">
+  <h2 class="section-title">Behind the Scenes: Core Values</h2>
+  <div class="values-grid">
+  <div class="value-card">
+    <div class="value-icon">🤝</div>
+    <h3>Leadership+Teamwork</h3>
+    <p>I'm a big believer that leaders lead - no matter what. I started playing team sports when I was 4yr old and I can't remember a time I wasn't on a team. Teamwork is the entry fee for being a leader and I believe I was built to lead. It's something I gravitate towards and flex leading from the back and allowing others to lead the way and from the front where I break ground and show what can be done.</p>
+  </div>
+    
+  <div class="value-card">
+    <div class="value-icon">💎</div>
+    <h3>Integrity</h3>
+    <p>Integrity is table stakes in life. As my career has progressed and life has become heavier with responsibility, I've found being and showing high integrity keeps me grounded. Some know it as karma, but I believe what you put out into the world is what you get back.</p>
+  </div>
+    
+  <div class="value-card">
+    <div class="value-icon">⚙️</div>
+    <h3>Curiosity+Humility</h3>
+    <p>I think of curiosity and humility as the same coin with different sides. They're part of my core values because curiosity is a core fundamental of learning and humility is a fundamental of openness. I'm innately curious and I've developed the emotional intelligence to have humility to new experiences, learnings, and what life throws at me.</p>
+  </div>
 
-      <div class="value-card">
-        <div class="value-icon">🏔️</div>
-        <h3>Continuous Growth</h3>
-        <p>Continuous learning is something that drives a lot of my purpose. It's enabled me to excel in tech and in school. Along with family, learning new things is what I believe what makes my life so rich. I have lofty goals of becoming a professor and learning all I can in this lifetime.</p>
-      </div>
+  <div class="value-card">
+    <div class="value-icon">🏔️</div>
+    <h3>Continuous Growth</h3>
+    <p>Continuous learning is something that drives a lot of my purpose. It's enabled me to excel in tech and in school. Along with family, learning new things is what I believe what makes my life so rich. I have lofty goals of becoming a professor and learning all I can in this lifetime.</p>
+  </div>
 
-      <div class="value-card">
-        <div class="value-icon">🏋️‍♀️</div>
-        <h3>Hard Work</h3>
-        <p>I'm highly competitive. I played team and individual sports my entire life, coached high school wrestling for years, and my family has a large collection of boardgames we compete with eachother in. I love logic games, chess, and games that have social elements of negotiation. I'm always pushing myself and those around me to set big goals.</p>
-      </div>
+  <div class="value-card">
+    <div class="value-icon">🏋️‍♀️</div>
+    <h3>Hard Work</h3>
+    <p>I'm highly competitive. I played team and individual sports my entire life, coached high school wrestling for years, and my family has a large collection of boardgames we compete with eachother in. I love logic games, chess, and games that have social elements of negotiation. I'm always pushing myself and those around me to set big goals.</p>
+  </div>
 
-      <div class="value-card">
-        <div class="value-icon">🔧</div>
-        <h3>Maker</h3>
-        <p>If you're not making you're consuming. This value is something my family shares. I grew up in a family of DIYers and with the introduction of AI it's now easier than ever to create. I love to 3d print, write, and work on my house as well as in the digit world.</p>
-      </div>
+  <div class="value-card">
+    <div class="value-icon">🔧</div>
+    <h3>Maker</h3>
+    <p>If you're not making you're consuming. This value is something my family shares. I grew up in a family of DIYers and with the introduction of AI it's now easier than ever to create. I love to 3d print, write, and work on my house as well as in the digit world.</p>
+  </div>
 
-    </div>
-  </section>
+</div>
+</section>
 
   <!-- Job Detail Templates -->
   <template id="tmpl-sr-manager">
