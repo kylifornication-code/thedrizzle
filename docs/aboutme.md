@@ -223,7 +223,7 @@ hide:
   <div class="value-card">
     <div class="value-icon">🤝</div>
     <h3>Leadership+Teamwork</h3>
-    <p>I'm a big believer that leaders lead - no matter what. I started playing team sports when I was 4yr old and I can't remember a time I wasn't on a team. Teamwork is the entry fee for being a leader and I believe I was built to lead. It's something I gravitate towards and flex leading from the back and allowing others to lead the way and from the front where I break ground and show what can be done.</p>
+    <p>I'm a big believer that leaders lead - no matter what. I started playing team sports when I was 4yr old and I can't remember a time I wasn't on a team. Teamwork is the entry fee for being a leader and I believe I was built to lead. It's something I gravitate towards. I flex leading from the back, allowing others to lead the way and from the front, where I break ground and show what can be done.</p>
   </div>
     
   <div class="value-card">
@@ -247,13 +247,13 @@ hide:
   <div class="value-card">
     <div class="value-icon">🏋️‍♀️</div>
     <h3>Hard Work</h3>
-    <p>I'm highly competitive. I played team and individual sports my entire life, coached high school wrestling for years, and my family has a large collection of boardgames we compete with eachother in. I love logic games, chess, and games that have social elements of negotiation. I'm always pushing myself and those around me to set big goals.</p>
+    <p>I'm highly competitive. I played team and individual sports my entire life, coached high school wrestling for years, and my family has a large collection of boardgames we compete with each other in. I love logic games, chess, and games that have social elements of negotiation. I'm always pushing myself and those around me to set big goals.</p>
   </div>
 
   <div class="value-card">
     <div class="value-icon">🔧</div>
     <h3>Maker</h3>
-    <p>If you're not making you're consuming. This value is something my family shares. I grew up in a family of DIYers and with the introduction of AI it's now easier than ever to create. I love to 3d print, write, and work on my house as well as in the digit world.</p>
+    <p>If you're not making you're consuming. This value is something my family shares. I grew up in a family of DIYers and with the introduction of AI it's now easier than ever to create. I love to 3d print, write, and work on my house as well as in the digital world.</p>
   </div>
 
 </div>
