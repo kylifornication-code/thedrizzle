@@ -13,7 +13,7 @@ authors:
 ---
 
 <figure markdown="span">
-![AI Content Analyzer](../../img/drizzle-ep01.png)
+![AI Content Analyzer](../../img/drizzle/drizzle-ep01.png)
   <figcaption>Courtesy of my mad Canva skills + ChatGPT</figcaption>
 </figure>
 
