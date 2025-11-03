@@ -58,12 +58,6 @@ Because we're approaching a new year and I want to spend my last 25k days on thi
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">95%<br><br>By the time your child turns 18, you&#39;ve spent ~95% of the time you will ever spend with them in your lifetime.<br><br>There are specific windows—­much shorter than you care to imagine or admit—during which certain people and relationships will occupy your life.<br><br>You may have only… <a href="https://t.co/1BbKxp6jCA">pic.twitter.com/1BbKxp6jCA</a></p>&mdash; Sahil Bloom (@SahilBloom) <a href="https://twitter.com/SahilBloom/status/1888235470758514699?ref_src=twsrc%5Etfw">February 8, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-### My review of Kiro AI 
-
-!!! example "Watch the Demo"
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/vREoUiqUNbg?si=-4KLBHJCPdU9eSR-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 ## 🖇️ Digital Drizzle: Interesting Links/Stories
 
 - More on Walking Decks. Check out [Karen Ngo's client list that has had success with them on her blog](https://kkarenism.com/career-walking-deck-example/).
