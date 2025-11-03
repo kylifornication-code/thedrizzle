@@ -1,5 +1,5 @@
 ---
-title: The Drizzle - ep 01 - Spec-Driven Development (SSD), PRDs, and Product Engineering
+title: The Drizzle - ep 01 - Spec-Driven Development (SSD), PRDs, and Product Engineering 
 date:
     created: 2025-09-28
 readtime: 5
@@ -13,7 +13,7 @@ authors:
 ---
 
 <figure markdown="span">
-![AI Content Analyzer](../../img/drizzle-ep01.png)
+![AI Content Analyzer](../../img/drizzle/drizzle-ep01.png)
   <figcaption>Courtesy of my mad Canva skills + ChatGPT</figcaption>
 </figure>
 

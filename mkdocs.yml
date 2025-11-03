@@ -118,8 +118,8 @@ plugins:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 # Commented out social media cards because of this stupid cairo build dep error, only commented out on QA
-  - social:
-      cards_layout_options:
-        logo: docs/img/logo.png
+#  - social:
+#      cards_layout_options:
+#        logo: docs/img/logo.png
 
 copyright: Copyright &copy; 2025 - Kylifornication (KJ)
