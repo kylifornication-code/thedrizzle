@@ -90,6 +90,13 @@ function createProjectHTML(project) {
     const status = getProjectStatus(project);
     const category = getProjectCategory(project);
     const lastUpdated = formatLastUpdated(project.last_activity_at);
+    const topics = project.topics || [];
+    
+    const topicsHTML = topics.length > 0 
+        ? `<div class="project-topics">
+            ${topics.map(topic => `<span class="project-topic">${topic}</span>`).join('')}
+           </div>`
+        : '';
     
     return `
         <div class="project-card" data-status="${status}" data-category="${category}" data-name="${project.name.toLowerCase()}">
@@ -117,6 +124,8 @@ function createProjectHTML(project) {
                         <span class="stat-item">📅 ${lastUpdated}</span>
                     </div>
                 </div>
+                
+                ${topicsHTML}
                 
                 <div class="project-actions">
                     <a href="${project.web_url}" target="_blank" rel="noopener" class="project-link">
@@ -150,6 +159,16 @@ function filterProjects() {
     });
 }
 
+function sortProjectsByStatus(projects) {
+    const statusOrder = { 'active': 1, 'experimental': 2, 'archived': 3 };
+    
+    return projects.sort((a, b) => {
+        const statusA = getProjectStatus(a);
+        const statusB = getProjectStatus(b);
+        return statusOrder[statusA] - statusOrder[statusB];
+    });
+}
+
 async function displayProjects() {
     const projectsContainer = document.getElementById('gitlab-projects');
     if (!projectsContainer) {
@@ -168,7 +187,8 @@ async function displayProjects() {
     }
 
     const publicProjects = allProjects.filter(project => project.visibility === 'public');
-    const projectsHTML = publicProjects.map(createProjectHTML).join('');
+    const sortedProjects = sortProjectsByStatus(publicProjects);
+    const projectsHTML = sortedProjects.map(createProjectHTML).join('');
 
     projectsContainer.innerHTML = projectsHTML;
     
@@ -401,6 +421,32 @@ const styles = `
     display: flex;
     align-items: center;
     gap: 0.25rem;
+}
+
+/* Project Topics */
+.project-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-topic {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(96, 165, 250, 0.1);
+    color: #60a5fa;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    border-radius: 0.375rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.project-topic:hover {
+    background: rgba(96, 165, 250, 0.2);
+    border-color: rgba(96, 165, 250, 0.5);
+    transform: translateY(-1px);
 }
 
 /* Project Actions */
