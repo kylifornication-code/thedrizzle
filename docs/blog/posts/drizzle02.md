@@ -27,6 +27,7 @@ authors:
 
     - [Using Kiro AI to build a POC of a learning request platform for my team](https://gitlab.com/kylifornication/training-requests)
     - [Career walking site](https://gitlab.com/kylifornication/career-walking-deck)
+        - Check out the [live demo env here](https://kylifornication-code.github.io/astro-career-walking-deck/).
 
 <!-- more -->
 
@@ -40,6 +41,8 @@ authors:
 
 ??? example "Career Walking Site"
 
+    Check out the [live demo env here](https://kylifornication-code.github.io/astro-career-walking-deck/).
+    
     <figure markdown="span">
     ![AI Content Analyzer](../../img/drizzle/walking-site.png)
     </figure>
