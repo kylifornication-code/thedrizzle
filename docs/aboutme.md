@@ -12,6 +12,7 @@ hide:
       <h1 class="about-hero-title">About Me</h1>
       <p class="about-hero-subtitle">My Story and Why I Built The Drizzle</p>
       <p class="about-hero-description">From PNW roots to tech leadership, here's the journey that shaped my approach to building, leading, and creating in the digital world.</p>
+    <p>To learn about me more, check out my <a href="https://kylifornication-code.github.io/astro-career-walking-deck/" target="_blank">career walking site</a>, or my <a href="https://kylifornication.gitlab.io/thedrizzle/blog/2025/09/01/my-operating-system/" target="_blank">operating system</a></p>
     </div>
     <div class="about-hero-image">
       <img src="../img/spaceneedle.png" alt="Space Needle" class="about-hero-img">
