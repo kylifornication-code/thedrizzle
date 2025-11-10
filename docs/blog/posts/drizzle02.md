@@ -2,6 +2,7 @@
 title: The Drizzle - ep 02 - Reflection and looking forward
 date:
     created: 2025-10-30
+    updated: 2025-11-09
 readtime: 5
 categories: 
     - Coding
@@ -49,12 +50,14 @@ Sometimes I picture life and work as a gambling table. Fold too often, and you'r
 
 Because we're approaching a new year and I want to spend my last 25k days on this earth doing the right stuff, I'm going to make these bets in the next year.
 
-- Run my first full marathon
-- Complete a Stanford Online Masters certification
-- Get the confidence to do live recorded demos of my Sunday projects
-- Build my deck and sauna in my backyard
+- Running my first full marathon will help me improve my quality of life and prove that I can push myself to complete the feat.
+- Complete a Stanford Online Masters certification to show myself that I can balance extending my education with 2 kids and a busy life.
+- Get the confidence to do live recorded demos of my Sunday projects so I can build more trust within myself and my skills.
+- Build my deck and sauna in my backyard because there's nothing better than working with your hands and feeling accomplished by building real things.
 
 #### How are you going to treat your next days? 
+
+I check this out and I've read Sahil's NY Times Bestseller, [The 5 Types of Wealth](https://www.the5typesofwealth.com), and seeing this graph always grounds me in what's important. Poeople - period.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">95%<br><br>By the time your child turns 18, you&#39;ve spent ~95% of the time you will ever spend with them in your lifetime.<br><br>There are specific windows—­much shorter than you care to imagine or admit—during which certain people and relationships will occupy your life.<br><br>You may have only… <a href="https://t.co/1BbKxp6jCA">pic.twitter.com/1BbKxp6jCA</a></p>&mdash; Sahil Bloom (@SahilBloom) <a href="https://twitter.com/SahilBloom/status/1888235470758514699?ref_src=twsrc%5Etfw">February 8, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
