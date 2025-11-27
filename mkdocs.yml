@@ -38,7 +38,7 @@ theme:
 
 nav:
   - Home: index.md
-  - About Me: aboutme.md
+  - Me Now: aboutme.md
   - Projects: projects.md
   - Blog:
       - Blog Home: blog/index.md
