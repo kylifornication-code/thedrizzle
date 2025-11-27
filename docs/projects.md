@@ -30,7 +30,6 @@ hide:
 
 <script>
 const GITLAB_USERNAME = 'kylifornication';
-const GITLAB_TOKEN = 'glpat-Xy7ykAd3H17CXjutajaH'; 
 const GITLAB_API_URL = `https://gitlab.com/api/v4/users/${GITLAB_USERNAME}/projects`;
 
 async function fetchGitLabProjects() {
@@ -38,7 +37,6 @@ async function fetchGitLabProjects() {
     try {
         const response = await fetch(GITLAB_API_URL, {
             headers: {
-                'PRIVATE-TOKEN': GITLAB_TOKEN,
                 'Content-Type': 'application/json'
             }
         });
