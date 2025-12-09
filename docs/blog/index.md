@@ -30,7 +30,7 @@ Take a look below for my most recent posts!
   justify-content: center;
   margin: 2rem 0;
   padding: 1.5rem;
-  background: transparent;
+  background: #475569;
   border: 1px solid #334155;
   border-radius: 1rem;
   transition: all 0.3s ease;
