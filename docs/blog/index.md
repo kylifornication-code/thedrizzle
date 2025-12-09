@@ -47,7 +47,7 @@ Take a look below for my most recent posts!
   height: 315px;
   margin: 0;
   border-radius: 0.5rem;
-  background-color: transparent;
+  background-color: #475569;
   border: none;
 }
 
