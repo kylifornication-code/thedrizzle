@@ -75,7 +75,11 @@ hide:
       <p>Have a project in mind or just want to chat? I'd love to hear from you!</p>
       <div class="contact-form">
         <div class="form-container">
-          <script src="https://www.cognitoforms.com/f/seamless.js" data-key="JyxLnYwMIUSwUYewiHQ4jQ" data-form="1"></script>
+          <script src="https://www.cognitoforms.com/f/seamless.js" data-key="JyxLnYwMIUSwUYewiHQ4jQ" data-form="1">   
+          </script>
+        </div>
+        <div class="subscribe-now-container">
+        <span><center><script async src="https://subscribe-forms.beehiiv.com/embed.js"></script><iframe src="https://subscribe-forms.beehiiv.com/bb579c61-3201-49d6-822d-cf74e512e461" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width: 560px; height: 315px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"></iframe></center></span>
         </div>
       </div>
     </div>
