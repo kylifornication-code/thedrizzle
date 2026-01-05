@@ -47,12 +47,21 @@ hide:
     <p>Playing sports year-round and into college shaped me into both a team player and a leader. If you're around me long enough, you'll probably end up running with me, pushing past your limits, or trying something that challenges you.</p>
     <div class="card-highlight">My competitive nature and background drive me to constantly strive for more in everything I do.</div>
   </div>
+  
+  <!-- Full-width card spanning the 3 cards above -->
+  <div class="story-card story-card-full">
+    <div class="card-icon"><center>🎯</center></div>
+    <h3>What I'm into</h3>
+    <p>I have no problem admitting that I'm a bit of an enthusiastic business/tech nerd. I enjoy listening to nonfiction books and have a regular lineup of business/tech podcasts that I listen to often. Watching TV at home, we mostly watch competition shows and sports. I have the side-quest type dream of getting on the TV show Survivor. I've watched all 50+ of the seasons and some seasons multiple times.</p>
+    <p>I like getting outdoors, too. I'm a hobby runner and love a challenging trail run and road race. I have a family of snowboarders and can be found at Snoqualmie (Silver Fir or East) and White Pass.</p>
+  </div>
 </div>
 
 <!-- Bo Schembechler Quote Section -->
 <div class="quote-section">
   <blockquote class="inspirational-quote">
-    <p>"The late great Bo Schembechler's 'The Team' speech still rings in my ears when I think about how some of the best coaches built their teams."</p>
+  <h4>The late great Bo Schembechler's 'The Team' speech still rings in my ears when I think about how some of the best coaches built their teams.</h4>
+  <p>"No man, no coach, is more important than the team. The team, the team, the team!"</p>
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/UrvwWfIeHu0?si=kGaZ0zM8uPsuEtTD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
@@ -643,6 +652,12 @@ document.addEventListener('DOMContentLoaded', function() {
   color: #cbd5e1;
   position: relative;
   z-index: 1;
+}
+
+.story-card-full {
+  grid-column: 1 / -1;
+  text-align: left;
+  max-width: 100%;
 }
 
 /* Quote Section */
