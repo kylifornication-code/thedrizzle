@@ -103,9 +103,15 @@
 /* Story Cards */
 .storyCards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-bottom: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .storyCards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 .storyCard {
@@ -176,7 +182,7 @@
   z-index: 1;
 }
 
-.storyCard-full {
+.storyCardFull {
   grid-column: 1 / -1;
   text-align: left;
   max-width: 100%;
@@ -627,6 +633,10 @@
   
   .storyCards {
     grid-template-columns: 1fr;
+  }
+  
+  .storyCardFull {
+    grid-column: 1;
   }
   
   .valuesGrid {

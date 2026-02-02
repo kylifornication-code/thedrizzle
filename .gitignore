@@ -39,6 +39,7 @@ config/secrets.*
 AGENTS.md
 .copilot/
 .github/copilot/**
+.github/skills/**
 .claude/
 .codex/
 .goose/
