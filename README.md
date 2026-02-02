@@ -1,50 +1,50 @@
-# My Personal Website
+# The Drizzle - Personal Website
 
-This project is a personal website built using MkDocs. It includes a homepage, a list of current GitLab projects, and a blog section. The website is designed to showcase my work and share my thoughts through blog posts.
+This is the repository for [The Drizzle](https://thedrizzle.dev), a personal website built with Docusaurus.
 
 ## Project Structure
 
-- `docs/index.md`: Homepage with introductory content about the website and the author.
-- `docs/projects.md`: A list of current GitLab projects with descriptions and links.
-- `docs/blog/index.md`: Main blog section with links to individual blog posts or summaries of recent posts.
-- `mkdocs.yml`: Configuration file for MkDocs, defining site name, theme, and navigation structure.
+```
+.
+├── blog/                # Blog posts
+├── docs/                # Documentation (currently unused)
+├── src/                 # React components and pages
+├── static/              # Static assets (images, etc.)
+├── docusaurus.config.ts # Docusaurus configuration
+├── package.json         # Node.js dependencies
+├── .gitlab-ci.yml       # GitLab Pages deployment config
+└── .github/workflows/   # GitHub Actions workflows
+```
 
-## Local Setup Instructions
+## Quick Start
 
-1. Clone the repository:
-   ```
-   git clone https://gitlab.com/kylifornication/kylifornication.info.git
-   cd kylifornication.info
-   ```
+### Development
 
-2. Use the Makefile to set up the project:
-> Download (make here)[https://ftp.gnu.org/gnu/make/]
-   ```
-   make setup
-   ```
+```bash
+npm install
+npm start
+```
 
-3. Serve the website locally:
-   ```
-   make serve
-   ```
+This starts a local development server at `http://localhost:3000`.
 
-4. Open your browser and go to `localhost:8000` to view the website.
+### Build
 
-### Deployment: GitLab Pages
+```bash
+npm run build
+```
 
-To deploy to GitLab Pages, use the Makefile:
-   ```
-   make deploy
-   ```
+This generates static content in the `build` directory.
 
-Ensure you have a `.gitlab-ci.yml` file configured for MkDocs. Push your changes to the `main` branch, and GitLab will automatically build and deploy your site.
+## Deployment
 
-### Deployment: GitLab Pages
+The site is automatically deployed when changes are pushed to the `main` branch:
 
-To deploy to GitLab Pages, ensure you have a `.gitlab-ci.yml` file configured for MkDocs. Push your changes to the `main` branch, and GitLab will automatically build and deploy your site.
+- **GitLab Pages**: Configured via `.gitlab-ci.yml`
+- **GitHub Pages**: Configured via `.github/workflows/deploy.yml`
 
-## Contributing
+Both deployment methods build the Docusaurus site and deploy the static files to their respective platforms.
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+## License
 
-[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
+Copyright © 2025 Kylifornication (KJ)
+
