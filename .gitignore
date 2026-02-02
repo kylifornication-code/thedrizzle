@@ -35,7 +35,7 @@ config/secrets.*
 **/.agents/**
 *.agent
 *.skill
-*.skills/**
+*.skills/
 AGENTS.md
 .copilot/
 .github/copilot/**
