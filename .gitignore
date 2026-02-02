@@ -35,12 +35,15 @@ config/secrets.*
 **/.agents/**
 *.agent
 *.skill
+*.skills/**
 AGENTS.md
 .copilot/
 .github/copilot/**
 .claude/
 .codex/
 .goose/
+.kiro/
+.playwright-mcp/
 
 # API Keys & Credentials
 **/api-keys/**
