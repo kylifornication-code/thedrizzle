@@ -1,6 +1,10 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import dotenv from 'dotenv';
+
+// Load environment variables from .env.local for local development
+dotenv.config({path: '.env.local'});
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -82,8 +86,8 @@ const config: Config = {
     [
       'posthog-docusaurus',
       {
-        apiKey: 'phx_12084JEJv84uhO7qUNIYgEOCzuEfW5IUPqxanTLA2LcfMUAe',
-        appUrl: 'https://us.i.posthog.com', // US instance
+        apiKey: process.env.POSTHOG_API_KEY || '', // Read from environment variable
+        appUrl: process.env.POSTHOG_APP_URL || 'https://us.i.posthog.com', // US instance (default)
         enableInDevelopment: false, // Disable in development mode
       },
     ],

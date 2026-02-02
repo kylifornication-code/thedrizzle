@@ -81,14 +81,6 @@ export default function Home(): JSX.Element {
         fontAwesomeScript.async = true;
         document.head.appendChild(fontAwesomeScript);
       }
-      
-      // Load beehiiv script after hydration
-      if (!document.querySelector('script[src*="beehiiv.com/embed.js"]')) {
-        const beehiivScript = document.createElement('script');
-        beehiivScript.src = 'https://subscribe-forms.beehiiv.com/embed.js';
-        beehiivScript.async = true;
-        document.head.appendChild(beehiivScript);
-      }
     }, 100);
 
     return () => {
@@ -227,30 +219,6 @@ export default function Home(): JSX.Element {
                 >
                   <i className="fa-brands fa-youtube"></i>
                 </a>
-              </div>
-              <div className={styles.subscribeNowContainer}>
-                <span>
-                  <center>
-                    {/* Script loaded dynamically after hydration */}
-                    <iframe 
-                      src="https://subscribe-forms.beehiiv.com/bb579c61-3201-49d6-822d-cf74e512e461" 
-                      className="beehiiv-embed" 
-                      data-test-id="beehiiv-embed" 
-                      frameBorder="0" 
-                      scrolling="no" 
-                      loading="lazy"
-                      style={{
-                        width: '560px',
-                        height: '315px',
-                        margin: '0',
-                        borderRadius: '0px',
-                        backgroundColor: 'transparent',
-                        boxShadow: '0 0 #0000',
-                        maxWidth: '100%'
-                      } as React.CSSProperties}
-                    />
-                  </center>
-                </span>
               </div>
             </div>
           </div>
