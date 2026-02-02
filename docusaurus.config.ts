@@ -41,7 +41,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'kylifornication-code', // Usually your GitHub org/user name.
-  projectName: 'thedrizzle', // Usually your repo name.
+  projectName: 'thedrizzle-v2.1', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
