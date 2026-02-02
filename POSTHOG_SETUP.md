@@ -2,7 +2,7 @@
 
 This document explains how to securely configure PostHog API keys for both local development and GitHub Actions deployment.
 
-## ✅ Implementation: GitHub Secrets + Environment Variables
+## ✅ Implementation: GitHub Secrets + Environment Variables 
 
 This is the **recommended approach** and has been implemented in this repository.
 
