@@ -1,4 +1,85 @@
-.cache
+# Dependencies
 node_modules
+
+# Production
+build
+.docusaurus
+
+# Generated files
+.cache-loader
+
+# Security & Secrets
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+secrets/
+*.secret
+*.secrets
+config/secrets.*
+**/secrets/**
+**/keys/**
+
+# Agent & AI Tool Configurations
+.agents/
+.cursor/
+.cursorrules
+.cursor/**
+**/.cursor/**
+**/.agents/**
+*.agent
+*.skill
+AGENTS.md
+.copilot/
+.github/copilot/**
+.claude/
+.codex/
+.goose/
+
+# API Keys & Credentials
+**/api-keys/**
+**/credentials/**
+**/auth/**
+*.credentials
+credentials.json
+service-account*.json
+*-credentials.json
+
+# IDE & Editor
+.idea/
+*.swp
+*.swo
+*~
 .vscode/
+*.code-workspace
+
+# OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+tmp/
+temp/
