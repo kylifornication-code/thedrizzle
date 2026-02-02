@@ -1,9 +1,11 @@
 pages:
   stage: deploy
-  image: python:latest
+  image: node:20
   script:
-    - pip install -r requirements.txt
-    - mkdocs build --site-dir public
+    - npm install
+    - npm run build
+    - mkdir -p public
+    - cp -r build/* public/
   only:
     - main
 

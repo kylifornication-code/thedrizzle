@@ -1,0 +1,24 @@
+coding:
+  label: Coding
+  permalink: /coding
+  description: Posts about coding, development, and technical projects
+
+drizzle:
+  label: Drizzle
+  permalink: /drizzle
+  description: The Drizzle series posts
+
+learning:
+  label: Learning
+  permalink: /learning
+  description: Posts about learning, education, and personal growth
+
+mylife:
+  label: MyLife.sh
+  permalink: /mylife
+  description: Personal life stories and experiences
+
+leadership:
+  label: Leadership
+  permalink: /leadership
+  description: Posts about leadership, management, and team building

@@ -1,0 +1,341 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Custom CSS Variables for Theme Support */
+:root {
+  --custom-bg-primary: #ffffff;
+  --custom-bg-secondary: #f8f9fa;
+  --custom-bg-surface: #ffffff;
+  --custom-text-primary: #1e293b;
+  --custom-text-secondary: #64748b;
+  --custom-text-muted: #94a3b8;
+  --custom-border-color: #e2e8f0;
+  --custom-navbar-bg: rgba(255, 255, 255, 0.95);
+  --custom-footer-bg: #ffffff;
+  --custom-code-bg: #f1f5f9;
+  --custom-code-border: #e2e8f0;
+  --custom-scrollbar-track: #f1f5f9;
+  --custom-scrollbar-thumb: #cbd5e1;
+  --custom-scrollbar-thumb-hover: #94a3b8;
+}
+
+[data-theme='dark'] {
+  --custom-bg-primary: #0f172a;
+  --custom-bg-secondary: #1e293b;
+  --custom-bg-surface: #1e293b;
+  --custom-text-primary: #e2e8f0;
+  --custom-text-secondary: #94a3b8;
+  --custom-text-muted: #64748b;
+  --custom-border-color: #334155;
+  --custom-navbar-bg: rgba(15, 23, 42, 0.95);
+  --custom-footer-bg: #0f172a;
+  --custom-code-bg: #1e293b;
+  --custom-code-border: #334155;
+  --custom-scrollbar-track: #0f172a;
+  --custom-scrollbar-thumb: #475569;
+  --custom-scrollbar-thumb-hover: #64748b;
+}
+
+/* Override Docusaurus theme colors for light theme */
+[data-theme='light'] {
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8f9fa;
+  --ifm-color-content: #1e293b;
+  --ifm-color-content-secondary: #64748b;
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.95);
+  --ifm-footer-background-color: #ffffff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* Override Docusaurus theme colors for dark theme */
+[data-theme='dark'] {
+  --ifm-color-primary: #60a5fa;
+  --ifm-color-primary-dark: #3b82f6;
+  --ifm-color-primary-darker: #2563eb;
+  --ifm-color-primary-darkest: #1e40af;
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
+  --ifm-background-color: #0f172a;
+  --ifm-background-surface-color: #1e293b;
+  --ifm-color-content: #e2e8f0;
+  --ifm-color-content-secondary: #94a3b8;
+  --ifm-navbar-background-color: rgba(15, 23, 42, 0.95);
+  --ifm-footer-background-color: #0f172a;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Global Styles */
+body {
+  background-color: var(--custom-bg-primary);
+  color: var(--custom-text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--ifm-color-primary-light);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--custom-text-primary);
+  font-weight: 600;
+}
+
+/* Code blocks */
+.prism-code {
+  background-color: var(--custom-code-bg);
+  border: 1px solid var(--custom-code-border);
+}
+
+code {
+  background-color: var(--custom-code-bg);
+  color: var(--custom-text-primary);
+  border: 1px solid var(--custom-code-border);
+}
+
+/* Tables */
+table {
+  border: 1px solid var(--custom-border-color);
+}
+
+table th {
+  background-color: var(--custom-bg-surface);
+  color: var(--custom-text-primary);
+  border-bottom: 1px solid var(--custom-border-color);
+}
+
+table td {
+  border-bottom: 1px solid var(--custom-border-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--custom-navbar-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--custom-border-color);
+  z-index: 200;
+}
+
+/* Mobile Sidebar - Ensure proper z-index and visibility */
+.navbar-sidebar {
+  z-index: 300 !important;
+}
+
+.navbar-sidebar__backdrop {
+  z-index: 299 !important;
+}
+
+/* Fix overflow issue on mobile - ensure navbar containers don't clip the sidebar */
+@media (max-width: 996px) {
+  .navbar,
+  .navbar__inner {
+    overflow: visible !important;
+  }
+  
+  /* Ensure the main wrapper doesn't clip the sidebar */
+  .main-wrapper {
+    overflow-x: visible !important;
+  }
+  
+  /* Ensure body/html don't clip when sidebar is open */
+  html.navbar-sidebar--show,
+  html.navbar-sidebar--show body {
+    overflow-x: visible !important;
+  }
+  
+  /* Ensure sidebar is properly positioned and visible - override Docusaurus defaults with maximum specificity */
+  .navbar-sidebar,
+  html.navbar-sidebar--show .navbar-sidebar,
+  .theme-layout-navbar-sidebar.navbar-sidebar,
+  nav.navbar .navbar-sidebar,
+  nav.navbar.navbar-sidebar--show .navbar-sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto !important;
+    width: 80% !important;
+    max-width: 300px !important;
+    min-width: 250px !important;
+    height: 100vh !important;
+    z-index: 300 !important;
+    overflow-x: visible !important;
+    overflow-y: auto !important;
+    box-sizing: border-box !important;
+  }
+  
+  html.navbar-sidebar--show .navbar-sidebar {
+    transform: translateX(0) !important;
+    visibility: visible !important;
+    display: block !important;
+  }
+  
+  /* Ensure sidebar panels don't clip content */
+  .navbar-sidebar .navbar-sidebar__item,
+  .navbar-sidebar .menu {
+    overflow-x: visible !important;
+    overflow-y: auto !important;
+  }
+}
+
+.navbar__brand {
+  color: var(--custom-text-primary);
+  font-weight: 600;
+}
+
+.navbar__link {
+  color: var(--custom-text-secondary);
+  transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--custom-footer-bg);
+  border-top: 1px solid var(--custom-border-color);
+}
+
+.footer__link-item {
+  color: var(--custom-text-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary);
+}
+
+.footer__link-item i {
+  font-size: 1rem;
+  width: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.footer__link-item:hover i {
+  transform: scale(1.1);
+}
+
+/* Footer social icons - added via JavaScript, styled here */
+.footer__link-item i.fa-brands {
+  font-size: 1rem;
+  width: 1rem;
+  text-align: center;
+  margin-right: 0.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer__link-item:hover i.fa-brands {
+  transform: scale(1.1);
+}
+
+/* Search */
+.navbar__search-input {
+  background-color: var(--custom-bg-surface);
+  border: 1px solid var(--custom-border-color);
+  color: var(--custom-text-primary);
+}
+
+.navbar__search-input::placeholder {
+  color: var(--custom-text-muted);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--custom-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--custom-scrollbar-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--custom-scrollbar-thumb-hover);
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Buy Me a Coffee Button */
+.buy-me-coffee-container {
+  margin: 3rem 0;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.buy-me-coffee-text {
+  margin-bottom: 1rem;
+  color: #e2e8f0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.buy-me-coffee-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #FFDD00 0%, #FFB800 100%);
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(255, 221, 0, 0.3);
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.buy-me-coffee-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 221, 0, 0.4);
+  color: #1e293b;
+  text-decoration: none;
+}
+
+.buy-me-coffee-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(255, 221, 0, 0.3);
+}
+
+.buy-me-coffee-button .coffee-icon {
+  font-size: 1.25rem;
+}
