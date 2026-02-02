@@ -34,6 +34,8 @@ build
 .goose/
 .github-copilot/
 .skills/
+.kiro/
+.playwright/
 
 # Logs
 npm-debug.log*
