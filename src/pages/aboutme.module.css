@@ -560,6 +560,7 @@
 
 .modalContent h3 { color: var(--ifm-color-content); margin-top: 0; }
 .modalContent p { color: var(--ifm-color-content-secondary); }
+.modalDescription { white-space: pre-line; }
 
 .modalClose {
   position: absolute;
