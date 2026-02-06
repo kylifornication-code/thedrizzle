@@ -25,18 +25,7 @@ const config: Config = {
   // If deploying to root domain, use '/'
   baseUrl: '/',
 
-  // Global scripts - FontAwesome for icons across the site
-  scripts: [
-    {
-      src: 'https://kit.fontawesome.com/48629d9f11.js',
-      crossorigin: 'anonymous',
-      defer: true,
-    },
-    {
-      src: '/js/footer-icons.js',
-      defer: true,
-    },
-  ],
+  // No global scripts needed — social icons are inline SVGs now
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

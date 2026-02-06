@@ -296,6 +296,25 @@
   border-radius: 1rem;
 }
 
+.retryButton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--ifm-color-primary);
+  background: transparent;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.retryButton:hover {
+  background: var(--ifm-color-primary);
+  color: #fff;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .modernProjectsPage {

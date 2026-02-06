@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useMemo, useCallback} from 'react';
 import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './projects.module.css';
 
 interface Project {
@@ -31,51 +30,99 @@ function getCachedNow(): number {
   return cachedNow;
 }
 
+const GITLAB_USERNAME = 'kylifornication';
+const GITLAB_API_URL = `https://gitlab.com/api/v4/users/${GITLAB_USERNAME}/projects`;
+const SESSION_CACHE_KEY = 'drizzle_projects_cache';
+const SESSION_CACHE_TTL = 5 * 60 * 1000; // 5 minutes
+
+function getCachedProjects(): Project[] | null {
+  try {
+    const raw = sessionStorage.getItem(SESSION_CACHE_KEY);
+    if (!raw) return null;
+    const {data, timestamp} = JSON.parse(raw);
+    if (Date.now() - timestamp > SESSION_CACHE_TTL) {
+      sessionStorage.removeItem(SESSION_CACHE_KEY);
+      return null;
+    }
+    return data as Project[];
+  } catch {
+    return null;
+  }
+}
+
+function setCachedProjects(projects: Project[]) {
+  try {
+    sessionStorage.setItem(
+      SESSION_CACHE_KEY,
+      JSON.stringify({data: projects, timestamp: Date.now()}),
+    );
+  } catch {
+    // sessionStorage may be unavailable (private browsing, quota exceeded)
+  }
+}
+
 export default function Projects(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [filterStatus, setFilterStatus] = useState('all');
 
-  const GITLAB_USERNAME = 'kylifornication';
-  const GITLAB_API_URL = `https://gitlab.com/api/v4/users/${GITLAB_USERNAME}/projects`;
+  const fetchProjects = useCallback((signal?: AbortSignal) => {
+    setLoading(true);
+    setError(null);
+
+    // Check session cache first
+    const cached = getCachedProjects();
+    if (cached) {
+      setProjects(cached);
+      setLoading(false);
+      return;
+    }
+
+    fetch(GITLAB_API_URL, {
+      headers: {'Content-Type': 'application/json'},
+      signal,
+    })
+      .then((res) => {
+        if (!res.ok) throw new Error(`GitLab API returned ${res.status}`);
+        return res.json();
+      })
+      .then((data) => {
+        const publicProjects = data.filter(
+          (p: Project) => p.visibility === 'public',
+        );
+        setProjects(publicProjects);
+        setCachedProjects(publicProjects);
+      })
+      .catch((err) => {
+        if (err.name === 'AbortError') return; // component unmounted
+        setError('Failed to load projects. GitLab may be temporarily unavailable.');
+      })
+      .finally(() => setLoading(false));
+  }, []);
 
   useEffect(() => {
-    async function fetchProjects() {
-      try {
-        const response = await fetch(GITLAB_API_URL, {
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        });
-        const data = await response.json();
-        const publicProjects = data.filter((p: Project) => p.visibility === 'public');
-        setProjects(publicProjects);
-      } catch (error) {
-        console.error('Fetch error:', error);
-      } finally {
-        setLoading(false);
-      }
-    }
-    fetchProjects();
-  }, [GITLAB_API_URL]);
+    const controller = new AbortController();
+    fetchProjects(controller.signal);
+    return () => controller.abort();
+  }, [fetchProjects]);
 
   const getProjectStatus = useCallback((project: Project): string => {
     const cacheKey = project.last_activity_at;
     if (statusCache.has(cacheKey)) {
       return statusCache.get(cacheKey)!;
     }
-    
+
     const lastActivity = new Date(project.last_activity_at).getTime();
     const now = getCachedNow();
     const daysSinceActivity = Math.floor((now - lastActivity) / (1000 * 60 * 60 * 24));
-    
+
     let status: string;
     if (daysSinceActivity < 30) status = 'active';
     else if (daysSinceActivity < 90) status = 'experimental';
     else status = 'archived';
-    
+
     statusCache.set(cacheKey, status);
     return status;
   }, []);
@@ -85,10 +132,9 @@ export default function Projects(): JSX.Element {
     if (categoryCache.has(cacheKey)) {
       return categoryCache.get(cacheKey)!;
     }
-    
+
     const name = project.name.toLowerCase();
-    const description = (project.description || '').toLowerCase();
-    
+
     let category: string;
     if (name.includes('web') || name.includes('frontend') || name.includes('ui')) category = '🌐 Web';
     else if (name.includes('api') || name.includes('backend') || name.includes('server')) category = '⚙️ Backend';
@@ -96,7 +142,7 @@ export default function Projects(): JSX.Element {
     else if (name.includes('data') || name.includes('ml') || name.includes('ai')) category = '🤖 Data';
     else if (name.includes('tool') || name.includes('cli') || name.includes('util')) category = '🔧 Tools';
     else category = '💻 General';
-    
+
     categoryCache.set(cacheKey, category);
     return category;
   }, []);
@@ -105,18 +151,18 @@ export default function Projects(): JSX.Element {
     if (dateFormatCache.has(dateString)) {
       return dateFormatCache.get(dateString)!;
     }
-    
+
     const date = new Date(dateString).getTime();
     const now = getCachedNow();
     const diffTime = Math.abs(now - date);
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    
+
     let formatted: string;
     if (diffDays === 1) formatted = '1 day ago';
     else if (diffDays < 7) formatted = `${diffDays} days ago`;
     else if (diffDays < 30) formatted = `${Math.floor(diffDays / 7)} weeks ago`;
     else formatted = `${Math.floor(diffDays / 30)} months ago`;
-    
+
     dateFormatCache.set(dateString, formatted);
     return formatted;
   }, []);
@@ -124,14 +170,14 @@ export default function Projects(): JSX.Element {
   const filteredProjects = useMemo(() => {
     const statusOrder: Record<string, number> = { 'active': 1, 'experimental': 2, 'archived': 3 };
     const searchLower = searchTerm.toLowerCase();
-    
+
     const filtered = projects.filter(project => {
       const matchesSearch = project.name.toLowerCase().includes(searchLower);
       const status = getProjectStatus(project);
       const matchesFilter = filterStatus === 'all' || status === filterStatus;
       return matchesSearch && matchesFilter;
     });
-    
+
     return [...filtered].sort((a, b) => {
       const statusA = getProjectStatus(a);
       const statusB = getProjectStatus(b);
@@ -151,7 +197,7 @@ export default function Projects(): JSX.Element {
             Every project is a drop in the digital storm - some gentle drizzles, others full downpours of innovation.
           </p>
         </div>
-        
+
         <div className={styles.projectsControls}>
           <div className={styles.searchContainer}>
             <input
@@ -161,6 +207,7 @@ export default function Projects(): JSX.Element {
               className={styles.searchInput}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
+              aria-label="Search projects"
             />
           </div>
           <div className={styles.filterContainer}>
@@ -169,6 +216,7 @@ export default function Projects(): JSX.Element {
               className={styles.filterSelect}
               value={filterStatus}
               onChange={(e) => setFilterStatus(e.target.value)}
+              aria-label="Filter by status"
             >
               <option value="all">All Projects</option>
               <option value="active">Active</option>
@@ -177,9 +225,22 @@ export default function Projects(): JSX.Element {
             </select>
           </div>
         </div>
-        
+
         {loading ? (
           <div className={styles.loading}>🌧️ Gathering projects from the digital storm...</div>
+        ) : error ? (
+          <div className={styles.emptyState}>
+            <p>⛈️ {error}</p>
+            <button
+              className={styles.retryButton}
+              onClick={() => {
+                sessionStorage.removeItem(SESSION_CACHE_KEY);
+                fetchProjects();
+              }}
+            >
+              Try again
+            </button>
+          </div>
         ) : filteredProjects.length === 0 ? (
           <div className={styles.emptyState}>
             <p>🌧️ No projects found - the clouds are empty today</p>
@@ -191,7 +252,7 @@ export default function Projects(): JSX.Element {
               const category = getProjectCategory(project);
               const lastUpdated = formatLastUpdated(project.last_activity_at);
               const statusCapitalized = status.charAt(0).toUpperCase() + status.slice(1);
-              
+
               return (
                 <div key={project.web_url} className={styles.projectCard} data-status={status}>
                   <div className={styles.projectHeader}>
@@ -206,17 +267,17 @@ export default function Projects(): JSX.Element {
                       {status === 'active' ? '⚡' : status === 'experimental' ? '🧪' : '📦'} {statusCapitalized}
                     </div>
                   </div>
-                  
+
                   <div className={styles.projectContent}>
                     <div className={styles.projectTitleSection}>
                       <h3 className={styles.projectTitle}>{project.name}</h3>
                       <div className={styles.projectCategory}>{category}</div>
                     </div>
-                    
+
                     <p className={styles.projectDescription}>
                       {project.description || 'No description available - just another drop in the digital storm.'}
                     </p>
-                    
+
                     <div className={styles.projectMeta}>
                       <div className={styles.projectStats}>
                         <span className={styles.statItem}>🌟 {project.star_count || 0}</span>
@@ -224,7 +285,7 @@ export default function Projects(): JSX.Element {
                         <span className={styles.statItem}>📅 {lastUpdated}</span>
                       </div>
                     </div>
-                    
+
                     {project.topics && project.topics.length > 0 && (
                       <div className={styles.projectTopics}>
                         {project.topics.map((topic, idx) => (
@@ -232,7 +293,7 @@ export default function Projects(): JSX.Element {
                         ))}
                       </div>
                     )}
-                    
+
                     <div className={styles.projectActions}>
                       <a
                         href={project.web_url}
@@ -241,7 +302,7 @@ export default function Projects(): JSX.Element {
                         className={styles.projectLink}
                       >
                         <span>View Project</span>
-                        <i className="fas fa-external-link-alt"></i>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="14" height="14" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg>
                       </a>
                     </div>
                   </div>
@@ -254,4 +315,3 @@ export default function Projects(): JSX.Element {
     </Layout>
   );
 }
-

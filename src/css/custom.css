@@ -231,28 +231,22 @@ table td {
   color: var(--ifm-color-primary);
 }
 
-.footer__link-item i {
-  font-size: 1rem;
+/* Footer social icons - inline SVGs injected by Footer wrapper */
+.footer__link-item .footer-icon {
+  display: inline-flex;
+  align-items: center;
   width: 1rem;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.footer__link-item:hover i {
-  transform: scale(1.1);
-}
-
-/* Footer social icons - added via JavaScript, styled here */
-.footer__link-item i.fa-brands {
-  font-size: 1rem;
-  width: 1rem;
-  text-align: center;
+  height: 1rem;
   margin-right: 0.5rem;
-  display: inline-block;
   transition: transform 0.3s ease;
 }
 
-.footer__link-item:hover i.fa-brands {
+.footer__link-item .footer-icon svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.footer__link-item:hover .footer-icon {
   transform: scale(1.1);
 }
 

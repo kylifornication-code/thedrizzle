@@ -377,8 +377,24 @@
   text-decoration: none;
 }
 
-.socialLink i {
+.socialLink svg {
   display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+@media (max-width: 768px) {
+  .socialLink svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .socialLink svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
 }
 
 .subscribeNowContainer {

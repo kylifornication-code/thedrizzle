@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useCallback} from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import SocialIcon from '@site/src/components/SocialIcon';
 import styles from './index.module.css';
 
 export default function Home(): JSX.Element {
@@ -69,24 +70,6 @@ export default function Home(): JSX.Element {
     };
   }, []);
 
-  // Defer third-party scripts until after hydration
-  useEffect(() => {
-    // Load scripts after a short delay to prioritize critical content
-    const timeoutId = setTimeout(() => {
-      // Load FontAwesome script
-      if (!document.querySelector('script[src*="fontawesome.com"]')) {
-        const fontAwesomeScript = document.createElement('script');
-        fontAwesomeScript.src = 'https://kit.fontawesome.com/48629d9f11.js';
-        fontAwesomeScript.crossOrigin = 'anonymous';
-        fontAwesomeScript.async = true;
-        document.head.appendChild(fontAwesomeScript);
-      }
-    }, 100);
-
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, []);
 
   return (
     <Layout
@@ -174,50 +157,50 @@ export default function Home(): JSX.Element {
             <p>Have a project in mind or just want to chat? I'd love to hear from you!</p>
             <div className={styles.contactForm}>
               <div className={styles.socialLinksContainer}>
-                <a 
-                  href="https://github.com/kylifornication-code" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/kylifornication-code"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className={styles.socialLink}
                   aria-label="GitHub"
                 >
-                  <i className="fa-brands fa-github"></i>
+                  <SocialIcon platform="github" />
                 </a>
-                <a 
-                  href="https://gitlab.com/kylifornication" 
-                  target="_blank" 
+                <a
+                  href="https://gitlab.com/kylifornication"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className={styles.socialLink}
                   aria-label="GitLab"
                 >
-                  <i className="fa-brands fa-gitlab"></i>
+                  <SocialIcon platform="gitlab" />
                 </a>
-                <a 
-                  href="https://www.linkedin.com/in/kylejamescwu/" 
-                  target="_blank" 
+                <a
+                  href="https://www.linkedin.com/in/kylejamescwu/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className={styles.socialLink}
                   aria-label="LinkedIn"
                 >
-                  <i className="fa-brands fa-linkedin"></i>
+                  <SocialIcon platform="linkedin" />
                 </a>
-                <a 
-                  href="https://www.instagram.com/kylifornication/" 
-                  target="_blank" 
+                <a
+                  href="https://www.instagram.com/kylifornication/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className={styles.socialLink}
                   aria-label="Instagram"
                 >
-                  <i className="fa-brands fa-instagram"></i>
+                  <SocialIcon platform="instagram" />
                 </a>
-                <a 
-                  href="https://www.youtube.com/@kylifornication11" 
-                  target="_blank" 
+                <a
+                  href="https://www.youtube.com/@kylifornication11"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className={styles.socialLink}
                   aria-label="YouTube"
                 >
-                  <i className="fa-brands fa-youtube"></i>
+                  <SocialIcon platform="youtube" />
                 </a>
               </div>
             </div>
