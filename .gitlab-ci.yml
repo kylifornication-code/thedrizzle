@@ -1,0 +1,54 @@
+stages:
+  - build
+  - ai
+
+# -------------------------------------------------------------------
+# Standard build job — validates the site compiles on every push / MR
+# -------------------------------------------------------------------
+build:
+  stage: build
+  image: node:24-alpine3.21
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+  before_script:
+    - npm ci --prefer-offline
+  script:
+    - npm run build
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push"'
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+
+# -------------------------------------------------------------------
+# Claude Code AI job — triggered manually or via @claude mentions
+# -------------------------------------------------------------------
+claude:
+  stage: ai
+  image: node:24-alpine3.21
+  variables:
+    GIT_STRATEGY: fetch
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+  before_script:
+    - apk update
+    - apk add --no-cache git curl bash
+    - curl -fsSL https://claude.ai/install.sh | bash
+    - npm ci --prefer-offline
+  script:
+    # Start GitLab MCP server for MR/issue interactions
+    - /bin/gitlab-mcp-server || true
+    - >
+      claude
+      -p "${AI_FLOW_INPUT:-'Review this MR and suggest improvements'}"
+      --permission-mode acceptEdits
+      --allowedTools "Bash Read Edit Write mcp__gitlab"
+      --debug
+  rules:
+    # Manual trigger from CI/CD → Pipelines → Run pipeline
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+    # Merge request events (comments, updates)
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+  timeout: 15m
