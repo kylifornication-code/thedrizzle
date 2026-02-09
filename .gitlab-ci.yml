@@ -1,24 +1,5 @@
 stages:
-  - build
   - ai
-
-# -------------------------------------------------------------------
-# Standard build job — validates the site compiles on every push / MR
-# -------------------------------------------------------------------
-build:
-  stage: build
-  image: node:24-alpine3.21
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
-  before_script:
-    - npm ci --prefer-offline
-  script:
-    - npm run build
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "push"'
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
 
 # -------------------------------------------------------------------
 # Claude Code AI job — triggered manually or via @claude mentions
