@@ -336,7 +336,9 @@ table td {
 
 /* Footer Subscription Form */
 .footer-subscription {
-  background-color: var(--custom-bg-secondary);
+  background:
+    linear-gradient(rgba(8, 18, 38, 0.7), rgba(8, 18, 38, 0.7)),
+    url('/img/rain-background.png') center / cover no-repeat;
   border-top: 1px solid var(--custom-border-color);
   padding: 2rem 1rem;
   text-align: center;
@@ -344,8 +346,11 @@ table td {
 
 .footer-subscription__cta {
   margin: 0 0 1rem;
-  color: var(--custom-text-secondary);
-  font-size: 1.05rem;
+  color: #f8fafc;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.35;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .footer-subscription :global(.subscriptionContainer) {
