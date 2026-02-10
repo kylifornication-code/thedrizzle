@@ -63,6 +63,9 @@ export default function FooterWrapper(props: Props): JSX.Element {
   return (
     <>
       <div className="footer-subscription">
+        <p className="footer-subscription__cta">
+          Want to find out when I have a new project or blog post, subscribe below!
+        </p>
         <SubscriptionForm />
       </div>
       <Footer {...props} />

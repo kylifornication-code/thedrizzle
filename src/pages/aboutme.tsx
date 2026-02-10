@@ -209,7 +209,7 @@ export default function AboutMe(): JSX.Element {
               <h1 className={styles.aboutHeroTitle}>Me Now</h1>
               <p className={styles.aboutHeroSubtitle}>My Story and Why I Built The Drizzle</p>
               <p className={styles.aboutHeroDescription}>
-                From PNW roots to tech leadership, here's the journey that shaped my approach to building, leading, and creating in the digital world.
+                A snapshot of my career and life. I'm a husband, father, and technologist who loves continuous improvement and learning. 
               </p>
               <p>
                 To learn about me more, check out my <a href="https://kylifornication-code.github.io/astro-career-walking-deck/" target="_blank" rel="noopener noreferrer">career walking site</a>, or my <a href="https://kylifornication.gitlab.io/thedrizzle/blog/2025/09/01/my-operating-system/" target="_blank" rel="noopener noreferrer">operating system</a>

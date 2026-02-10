@@ -342,6 +342,12 @@ table td {
   text-align: center;
 }
 
+.footer-subscription__cta {
+  margin: 0 0 1rem;
+  color: var(--custom-text-secondary);
+  font-size: 1.05rem;
+}
+
 .footer-subscription :global(.subscriptionContainer) {
   margin: 0;
   padding: 0;

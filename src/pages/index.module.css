@@ -319,21 +319,6 @@
   flex-wrap: wrap;
 }
 
-/* Subscription Section */
-.subscriptionSection {
-  padding: 2.5rem 2rem;
-  border-bottom: 2px solid var(--custom-border-color);
-  background: linear-gradient(135deg, rgba(96, 165, 250, 0.05) 0%, rgba(59, 130, 246, 0.02) 100%);
-}
-
-.subscriptionSection h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  color: var(--ifm-color-content);
-}
-
 /* Contact Section */
 .contactSection {
   padding: 2.5rem 2rem;
@@ -505,7 +490,6 @@
   
   .aboutSection,
   .blogSection,
-  .subscriptionSection,
   .contactSection {
     padding: 1.5rem 1rem;
   }
