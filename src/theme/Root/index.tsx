@@ -43,6 +43,7 @@ export default function RootWrapper(props: Props): JSX.Element {
     <>
       <Head>
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        <script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
       </Head>
       <Root {...props} />
     </>

@@ -333,3 +333,22 @@ table td {
 .buy-me-coffee-button .coffee-icon {
   font-size: 1.25rem;
 }
+
+/* Footer Subscription Form */
+.footer-subscription {
+  background-color: var(--custom-bg-secondary);
+  border-top: 1px solid var(--custom-border-color);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-subscription :global(.subscriptionContainer) {
+  margin: 0;
+  padding: 0;
+}
+
+/* Blog Post Subscription */
+.blog-post-subscription {
+  margin: 3rem 0;
+  padding: 2rem 1rem;
+}

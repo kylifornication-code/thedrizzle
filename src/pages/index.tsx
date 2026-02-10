@@ -2,6 +2,7 @@ import React, {useEffect, useRef, useCallback} from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import SocialIcon from '@site/src/components/SocialIcon';
+import SubscriptionForm from '@site/src/components/SubscriptionForm';
 import styles from './index.module.css';
 
 export default function Home(): JSX.Element {
@@ -147,6 +148,17 @@ export default function Home(): JSX.Element {
               <a href="/blog" className={styles.btnOutline}>Read My Blog</a>
               <a href="/projects" className={styles.btnOutline}>View Projects</a>
             </div>
+          </div>
+        </section>
+
+        {/* Newsletter Subscription Section */}
+        <section className={styles.subscriptionSection}>
+          <div className={styles.container}>
+            <h2>Stay Updated</h2>
+            <p className={styles.sectionDescription}>
+              Subscribe to get notified when I publish new posts and updates.
+            </p>
+            <SubscriptionForm />
           </div>
         </section>
 

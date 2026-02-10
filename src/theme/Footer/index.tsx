@@ -3,6 +3,7 @@ import Footer from '@theme-original/Footer';
 import type FooterType from '@theme/Footer';
 import type {WrapperProps} from '@docusaurus/types';
 import {getPlatformFromUrl} from '@site/src/components/SocialIcon';
+import SubscriptionForm from '@site/src/components/SubscriptionForm';
 
 type Props = WrapperProps<typeof FooterType>;
 
@@ -59,5 +60,12 @@ function useFooterIcons() {
 export default function FooterWrapper(props: Props): JSX.Element {
   useFooterIcons();
 
-  return <Footer {...props} />;
+  return (
+    <>
+      <div className="footer-subscription">
+        <SubscriptionForm />
+      </div>
+      <Footer {...props} />
+    </>
+  );
 }

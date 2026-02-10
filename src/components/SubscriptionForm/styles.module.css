@@ -1,0 +1,97 @@
+.subscriptionContainer {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.subscriptionForm {
+  display: inline-flex;
+  align-items: stretch;
+  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
+  gap: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Style the form elements */
+.subscriptionForm input[type="email"] {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--custom-border-color);
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  background-color: var(--custom-bg-surface);
+  color: var(--custom-text-primary);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  min-width: 0;
+}
+
+.subscriptionForm input[type="email"]:focus {
+  border-color: var(--ifm-color-primary);
+}
+
+.subscriptionForm input[type="email"]::placeholder {
+  color: var(--custom-text-muted);
+}
+
+.subscriptionForm button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--custom-text-primary);
+  color: var(--custom-bg-primary);
+  border: 1px solid var(--custom-text-primary);
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.subscriptionForm button:hover {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  color: var(--custom-bg-primary);
+}
+
+.subscriptionForm button:active {
+  transform: scale(0.98);
+}
+
+/* Dark theme adjustments */
+[data-theme='dark'] .subscriptionForm button {
+  background-color: var(--custom-text-primary);
+  color: var(--custom-bg-primary);
+  border-color: var(--custom-text-primary);
+}
+
+[data-theme='dark'] .subscriptionForm button:hover {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  color: var(--custom-bg-primary);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .subscriptionForm {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .subscriptionForm input[type="email"] {
+    border-radius: 8px;
+    border-right: 1px solid var(--custom-border-color);
+    width: 100%;
+  }
+
+  .subscriptionForm button {
+    border-radius: 8px;
+    border-left: 1px solid var(--custom-text-primary);
+    width: 100%;
+  }
+}
+
