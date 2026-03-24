@@ -1,6 +1,6 @@
 ---
 title: My Operating System
-date: 2025-09-01
+date: 2026-03-24
 authors:
     - kylifornication
 tags:
