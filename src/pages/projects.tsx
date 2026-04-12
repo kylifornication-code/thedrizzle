@@ -130,8 +130,8 @@ export default function Projects(): JSX.Element {
     const daysSinceActivity = Math.floor((now - lastActivity) / (1000 * 60 * 60 * 24));
 
     let status: string;
-    if (daysSinceActivity < 30) status = 'active';
-    else if (daysSinceActivity < 90) status = 'experimental';
+    if (daysSinceActivity < 180) status = 'active';
+    else if (daysSinceActivity < 365) status = 'experimental';
     else status = 'archived';
 
     statusCache.set(cacheKey, status);
