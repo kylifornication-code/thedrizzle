@@ -104,6 +104,59 @@ That's the use case I wanted to demonstrate: building a product, writing documen
 
 ---
 
+## Running Claude Channels securely — what I learned
+
+Building a full production app from your phone via Telegram sounds exciting. And it is. But if you're going to run Claude Code as a remote agent connected to a Telegram bot with access to your local machine, your repos, and your deploy keys — you need to think about this like a security person.
+
+Here's what I put in place and what I'd recommend.
+
+### Lock the bot to your user only
+
+The Claude Channels Telegram plugin uses an `access.json` file to manage who can interact with your bot. By default, if someone gets your bot token, they can send messages to your Claude Code session and execute arbitrary commands on your machine.
+
+The fix is simple but critical: restrict the allowlist to your own Telegram user ID (and any trusted groups) before you start using it. The plugin supports user-level and group-level access control. Set it up before you do anything else.
+
+If someone gets in — even accidentally — they're not just reading your chat. They're potentially running code, accessing your file system, and pushing to your repos.
+
+### Verify before you execute
+
+Claude Code has a permission model: before it writes a file, runs a command, or pushes to GitHub, it shows you what it's about to do and asks for approval. In Telegram mode, that approval flow comes back to your phone.
+
+This is human-in-the-loop by design — and it matters more than it sounds. I caught it in the act during this build.
+
+At one point, Claude proposed a `git push --force` to resolve a branch conflict. I denied it, told it what I actually wanted, and it corrected course. That one denial probably saved me from overwriting commits I cared about. Force pushes to shared branches are the kind of action that's hard to undo — and the kind of thing an AI agent under time pressure will reach for as a path-of-least-resistance fix.
+
+The lesson: **don't just read what the AI proposes. Read it like a code reviewer.** You're approving real shell commands with real consequences.
+
+A few patterns I now follow:
+- Deny anything with `--force`, `--no-verify`, or `rm -rf` unless I specifically asked for it
+- Read commit messages before approving pushes
+- Question any command that touches credentials, env files, or CI config
+
+### Claude Channels vs. OpenClaw
+
+If you've been in the autonomous coding agent space, you may have come across **OpenClaw** — an open-source framework for running AI coding agents locally via various interfaces including chat-based triggers.
+
+Here's how I'd compare the two approaches:
+
+| | Claude Channels (Telegram) | OpenClaw |
+|---|---|---|
+| **Model** | Claude (Anthropic) | Open-source, model-agnostic |
+| **Interface** | Telegram bot | Various (web, CLI, chat) |
+| **Access control** | Allowlist via `access.json` | Depends on deployment |
+| **Permission model** | Per-tool approval prompts | Varies by config |
+| **Setup complexity** | Low — plugin + bot token | Higher — self-hosted |
+| **Transparency** | You see every tool call | Depends on UI |
+| **Cost** | Claude API usage | Model-dependent |
+
+The biggest practical difference in my experience: Claude Channels keeps the human in the loop at every significant action. The approval flow isn't optional — it's the default. OpenClaw and similar open-source agents can be configured for full autonomy, which is powerful but shifts more responsibility onto you to set guard rails.
+
+For a security practitioner specifically, I'd argue the Claude Channels model is actually the more defensible one to start with. You build up trust in the agent's judgment one approved action at a time. You learn what it does well and where it reaches for risky shortcuts. Then you decide — intentionally — how much autonomy to grant over time.
+
+Trust but verify. Especially when the thing you're trusting has shell access to your laptop.
+
+---
+
 ## If you're early in your career in security
 
 Ask for help. Ask the uncomfortable questions. Find the people who will actually answer and don't let those conversations be one-directional.
